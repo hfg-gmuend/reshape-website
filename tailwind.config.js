@@ -2,6 +2,9 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		colors: {
+			'reshape-mauve': '#ACACFF'
+		},
 		extend: {}
 	},
 	plugins: []
