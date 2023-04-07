@@ -37,3 +37,38 @@ body {
 	font-family: 'Atlas Grotesk', sans-serif;
 	font-weight: 500;
 }
+
+.reshape-copy {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.reshape-lead-medium {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.reshape-lead-light {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.reshape-gradient-bg {
+	background: linear-gradient(to right, #acacff 0%, white 5%, white 95%, #acacff 100%);
+}
+
+.inset {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.inset-negative {
+	margin: 0 -24px;
+}
+
+.inset-left {
+	padding-left: 31px;
+}

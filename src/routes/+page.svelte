@@ -1,5 +1,7 @@
 <script>
-	import MenuIcon from '../lib/icon-menu.svelte';
+	import MenuIcon from '$lib/icon-menu.svelte';
+	import SpeakerTile from '$lib/speaker-tile.svelte';
+	import Carousel from '$lib/carousel.svelte';
 	let menuOpen = false;
 
 	function toggleMenu() {
@@ -20,7 +22,7 @@
 
 <header
 	class="fixed w-full z-20 inset border-y-2 border-black h-11 flex items-center"
-	class:bg-green={!menuOpen}
+	class:bg-white={!menuOpen}
 	class:bg-reshape-mauve={menuOpen}
 >
 	<span class="font-medium text-base">reshape</span>
@@ -28,17 +30,26 @@
 	>
 </header>
 
-<main class="pt-11 inset">
-	<div class="w-full min-h-screen relative">
-		<h1 class="symposium-title">reshape</h1>
-		<h2 class="symposium-subtitle text-base font-normal">
-			Forum for Artificial Intelligence in Art and Design
-		</h2>
+<main class="pt-11 inset reshape-gradient-bg">
+	<div class="cover min-h-screen relative inset-negative">
+		<div class="inset">
+			<h1 class="symposium-title">reshape</h1>
+			<h2 class="symposium-subtitle text-base font-normal">
+				Forum for Artificial Intelligence in Art and Design
+			</h2>
+		</div>
 	</div>
 	<section>
 		<p class="symposium-firstpara reshape-lead-medium text-xl">
 			Reshape ist eine interdisziplinäre Veranstaltung, die Kreative, Experten und neugierige zum
 			Austausch über Künstliche Intelligenz zusammenbringt.
+		</p>
+		<p class="reshape-copy inset-left mb-16">
+			Über 2,5 Tage bieten wir ein Forum für kritische Reflexion, Wissens- und Kompetenzaustausch
+			und Diskussionen über die Verwendung von KI als kreatives Werkzeug. Mit einer Reihe von
+			Vorträgen, Workshops, Performances und einer Ausstellung laden wir die Besucher ein,
+			verschiedene "intelligente" Systeme in kreativen Kontexten zu erkunden und mehr über ihre
+			Relevanz und Auswirkungen auf unsere Welt zu erfahren.
 		</p>
 		<p class="reshape-copy inset-left">
 			Über 2,5 Tage bieten wir ein Forum für kritische Reflexion, Wissens- und Kompetenzaustausch
@@ -51,15 +62,7 @@
 
 	<section>
 		<h2 class="section-header">Speaker*innen</h2>
-		<ul>
-			<li>Simon Maris</li>
-			<li>Lorem Ipsum</li>
-			<li>Lorem Ipsum</li>
-			<li>Lorem Ipsum</li>
-			<li>Lorem Ipsum</li>
-			<li>Lorem Ipsum</li>
-			<li>Lorem Ipsum</li>
-		</ul>
+		<Carousel />
 	</section>
 	<section>
 		<h2 class="section-header">Öffentliches Programm</h2>
@@ -196,107 +199,98 @@
 	</section>
 	<section>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<article>
-			<p class="reshape-lead-medium mt-32">
-				Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der Gestaltungslehre.
-				Gefördert vom BMBF.
-			</p>
-			<h2 class="section-header mt-20">KITeGG</h2>
-			<p class="reshape-copy inset-left">
-				Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
-				Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
-				Köln International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen
-				der Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
-				Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
-			</p>
-			<p class="reshape-copy inset-left mt-9">
-				Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
-				berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
-				Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
-				des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
-				von über.
-			</p>
-		</article>
-		<article>
-			<h2 class="section-header mt-20">AI+D Lab</h2>
-			<p class="reshape-copy inset-left">
-				Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
-				Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
-				Köln International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen
-				der Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
-				Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
-			</p>
-			<p class="reshape-copy inset-left mt-9">
-				Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
-				berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
-				Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
-				des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
-				von über.
-			</p>
-		</article>
-		<article>
-			<h2 class="section-header mt-20">Team</h2>
-		</article>
-		<article>
-			<h2 class="section-header mt-20">Kontakt</h2>
-			<p class="reshape-copy">
-				<span class="font-medium">Hoch­schule für Gestal­tung Schwä­bisch Gmünd</span>
-				<br />Univer­sity of Applied Sciences <br />Rektor-Klaus-Straße 100 <br />D‑73525
-				Schwä­bisch Gmünd
-				<a class="block reshape-link mt-8" href="http://" target="_blank" rel="noopener noreferrer"
-					>Google Maps</a
-				>
-			</p>
-			<p class="reshape-copy mt-14">
-				<span class="font-medium block mb-6">Let's get social</span>
-				<br />
-				<a class="reshape-link mr-14" href="http://" target="_blank" rel="noopener noreferrer"
-					>Instagram</a
-				>
-				<a class="reshape-link" href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
-			</p>
-		</article>
+		<p class="reshape-lead-medium mt-32">
+			Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der Gestaltungslehre.
+			Gefördert vom BMBF.
+		</p>
+		<h2 class="section-header mt-20">KITeGG</h2>
+		<p class="reshape-copy inset-left">
+			Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
+			Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die Köln
+			International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen der
+			Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
+			Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
+		</p>
+		<p class="reshape-copy inset-left mt-9">
+			Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
+			berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
+			Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
+			des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
+			von über.
+		</p>
+	</section>
+	<section>
+		<h2 class="section-header mt-20">AI+D Lab</h2>
+		<p class="reshape-copy inset-left">
+			Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
+			Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die Köln
+			International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen der
+			Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
+			Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
+		</p>
+		<p class="reshape-copy inset-left mt-9">
+			Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
+			berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
+			Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
+			des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
+			von über.
+		</p>
+	</section>
+	<section>
+		<h2 class="section-header mt-20">AI+D Team</h2>
+		<div class="grid grid-cols-2 gap-y-12">
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+			<SpeakerTile />
+		</div>
+	</section>
+	<section>
+		<h2 class="section-header mt-20">Reshape Team</h2>
+		<p class="reshape-copy"><span class="font-medium">Programm</span><br />Alexa Steinbrück</p>
+		<p>&nbsp;</p>
+		<p class="reshape-copy">
+			<span class="font-medium">Graphic Design</span><br />Lucie Paula Claire de Hair
+		</p>
+	</section>
+	<section>
+		<h2 class="section-header mt-20">Kontakt</h2>
+		<p class="reshape-copy">
+			<span class="font-medium">Hoch­schule für Gestal­tung Schwä­bisch Gmünd</span>
+			<br />Univer­sity of Applied Sciences <br />Rektor-Klaus-Straße 100 <br />D‑73525 Schwä­bisch
+			Gmünd
+			<a
+				class="block reshape-link mt-8"
+				href="https://goo.gl/maps/FCYPLeJzBLvpGkQNA"
+				target="_blank"
+				rel="noopener noreferrer">Google Maps</a
+			>
+		</p>
+		<p class="reshape-copy mt-14">
+			<span class="font-medium block mb-6">Let's get social</span>
+			<br />
+			<a class="reshape-link mr-14" href="http://" target="_blank" rel="noopener noreferrer"
+				>Instagram</a
+			>
+			<a class="reshape-link" href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
+		</p>
 	</section>
 	<section class="h-64">Logos...</section>
 </main>
 
 <style>
-	.inset {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
-
-	.inset-negative {
-		margin: 0 -24px;
-	}
-
-	.inset-left {
-		padding-left: 31px;
-	}
-	.reshape-copy {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-	}
-
-	.reshape-lead-medium {
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 24px;
-	}
-
-	.reshape-lead-light {
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 24px;
+	.cover {
+		background: url('$lib/assets/form-background.png');
 	}
 
 	.symposium-title {
 		text-align: right;
 		width: 100%;
 		font-size: 55px;
-		position: absolute;
-		top: 238px;
 	}
 	.symposium-subtitle {
 		font-family: 'Helvetica';
@@ -334,7 +328,7 @@
 	}
 
 	div.seperator {
-		border-top: solid black;
+		border-top: 2px solid black;
 	}
 
 	.reshape-link::after {
