@@ -1,6 +1,7 @@
 <script>
 	import MenuIcon from '$lib/icon-menu.svelte';
 	import SpeakerTile from '$lib/speaker-tile.svelte';
+	import TeamTile from '$lib/team-tile.svelte';
 	import Carousel from '$lib/carousel.svelte';
 	let menuOpen = false;
 
@@ -62,7 +63,16 @@
 
 	<section>
 		<h2 class="section-header">Speaker*innen</h2>
-		<Carousel />
+		<div class="overflow-hidden inset-negative">
+			<div class="inset">
+				<div class="inset-left">
+					<Carousel autoplay="3000" perPage="1">
+						<SpeakerTile name="Simon Maris" />
+						<SpeakerTile name="Alexa Steinbrück" />
+					</Carousel>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section>
 		<h2 class="section-header">Öffentliches Programm</h2>
@@ -239,14 +249,14 @@
 	<section>
 		<h2 class="section-header mt-20">AI+D Team</h2>
 		<div class="grid grid-cols-2 gap-y-12">
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
-			<SpeakerTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
+			<TeamTile />
 		</div>
 	</section>
 	<section>
