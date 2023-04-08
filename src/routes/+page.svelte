@@ -8,15 +8,22 @@
 	function toggleMenu() {
 		menuOpen = !menuOpen;
 	}
+
+	const menuItems = [
+		{ title: 'Program', link: 'program' },
+		{ title: 'Anmeldung', link: 'anmeldung' },
+		{ title: 'AI+D Lab', link: 'ai-d-lab' },
+		{ title: 'KITeGG', link: 'kitegg' }
+	];
 </script>
 
+<!-- Mobile Menu -->
 {#if menuOpen}
-	<nav class="fixed w-full z-10 h-screen pt-11 bg-reshape-mauve inset text-4xl">
+	<nav class="fixed w-full z-10 h-screen pt-11 bg-reshape-mauve inset text-4xl md:hidden">
 		<ul>
-			<li>Programm</li>
-			<li>Anmeldung</li>
-			<li>AI+D Lab</li>
-			<li>Kontakt</li>
+			{#each menuItems as item}
+				<li on:click={() => (menuOpen = false)}><a href="#{item.link}">{item.title}</a></li>
+			{/each}
 		</ul>
 	</nav>
 {/if}
@@ -26,8 +33,20 @@
 	class:bg-white={!menuOpen}
 	class:bg-reshape-mauve={menuOpen}
 >
-	<span class="font-medium text-base">reshape</span>
-	<button class="ml-auto p-2" on:click={toggleMenu} class:rotate-45={!menuOpen}><MenuIcon /></button
+	<nav class="font-light w-full max-md:hidden">
+		<ul class="flex justify-between">
+			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
+				<li><a href="#{item.link}">{item.title}</a></li>
+			{/each}
+			<li><a href="#" class="font-medium">reshape</a></li>
+			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
+				<li><a href="#{item.link}">{item.title}</a></li>
+			{/each}
+		</ul>
+	</nav>
+	<span class="font-medium text-base md:hidden">reshape</span>
+	<button class="md:hidden ml-auto p-2" on:click={toggleMenu} class:rotate-45={!menuOpen}
+		><MenuIcon /></button
 	>
 </header>
 
@@ -90,7 +109,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="program">
 		<h2 class="reshape-section-header md:reshape-desktop-section-header">Öffentliches Programm</h2>
 		<p class="mb-8 reshape-lead-light">10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)</p>
 		<div class="inset-negative"><div class="seperator" /></div>
@@ -180,7 +199,7 @@
 				</li>
 			</ul>
 		</article>
-		<div class="inset-negative"><div class="seperator" /></div>
+		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
 		<p class="mt-20 reshape-lead-medium md:reshape-desktop-lead-medium">
 			Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung
 		</p>
@@ -236,7 +255,7 @@
 			Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der Gestaltungslehre.
 			Gefördert vom BMBF.
 		</p>
-		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40">
+		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40" id="kitegg">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">KITeGG</h2>
 			<p class="reshape-copy max-md:inset-left">
 				Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
@@ -255,7 +274,7 @@
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40">
+		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40" id="ai-d-lab">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header max-md:mt-20">
 				AI+D Lab
 			</h2>
