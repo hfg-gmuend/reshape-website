@@ -32,6 +32,15 @@
 	font-weight: 900; /*black/heavy = 900*/
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	max-width: 60ch;
+}
+
 html,
 body {
 	font-family: 'Atlas Grotesk', sans-serif;
@@ -44,31 +53,66 @@ body {
 	line-height: 19px;
 }
 
-.reshape-lead-medium {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 24px;
+@responsive {
+	.reshape-lead-medium {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.reshape-desktop-lead-medium {
+		font-weight: 500;
+		font-size: 60px;
+		line-height: 72px;
+	}
 }
-
-.reshape-lead-light {
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 24px;
+@responsive {
+	.reshape-lead-light {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+	}
 }
 
 .reshape-gradient-bg {
-	background: linear-gradient(to right, #acacff 0%, white 5%, white 95%, #acacff 100%);
+	background: linear-gradient(
+		to right,
+		#acacff 0%,
+		white 20px,
+		white calc(100% - 20px),
+		#acacff 100%
+	);
 }
 
-.inset {
-	padding-left: 24px;
-	padding-right: 24px;
+@responsive {
+	.reshape-section-header {
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 22px;
+	}
+	.reshape-desktop-section-header {
+		font-size: 60px;
+		line-height: 72px;
+		margin: 0;
+	}
 }
 
-.inset-negative {
-	margin: 0 -24px;
+.reshape-subsection-header {
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 22px;
 }
 
-.inset-left {
-	padding-left: 31px;
+@responsive {
+	.inset {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.inset-negative {
+		margin: 0 -24px;
+	}
+
+	.inset-left {
+		padding-left: 31px;
+	}
 }

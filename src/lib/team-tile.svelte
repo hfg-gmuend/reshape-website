@@ -1,11 +1,12 @@
 <script>
+	export let name = '';
+	export let description = '';
 </script>
 
 <div class="reshape-copy">
 	<div class="border-black border rounded-2xl image w-36 h-36" />
-	<p class=" mt-4 name">Hartmut Bohnacker</p>
-	<p>Fokus</p>
-	<p>Aufgabengebiet</p>
+	<p class=" mt-4 name">{name}</p>
+	<p>{description}</p>
 </div>
 
 <style>
