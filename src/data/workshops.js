@@ -1,7 +1,7 @@
 export default [
 	{
-		title: 'PLAYTRACING',
-		host: 'Simon Maris (Hochschule Trier)',
+		timeslot: 'PLAYTRACING',
+		title: 'Simon Maris (Hochschule Trier)',
 		description: `The process of visualising products, interiors, buildings and urban situations is
         about to change radically. Traditionally, render engines have been concerned
         with simulating the physical behaviour of light by bouncing rays of light through
@@ -19,8 +19,8 @@ export default [
         image making tools and visions!`
 	},
 	{
-		title: 'Making (Non)Sense – Prototyping AI based Interactive Systems with Sensors',
-		host: 'Rahel Flechtner (HfG Schwäbisch-Gmünd) & Jakob Kilian (KISD)',
+		timeslot: 'Making (Non)Sense – Prototyping AI based Interactive Systems with Sensors',
+		title: 'Rahel Flechtner (HfG Schwäbisch-Gmünd) & Jakob Kilian (KISD)',
 		description: `In this workshop, we will explore the possibilities of sensor data and gain a deeper understanding
         of how it can be used to create interactive AI based systems.
         In the first part of the workshop, we'll be acting out AI systems in an interactive and playful
@@ -32,8 +32,8 @@ export default [
         microcontrollers.`
 	},
 	{
-		title: 'Typedesign with Karlo',
-		host: 'Markus Mau (Hochschule Mainz)',
+		timeslot: 'Typedesign with Karlo',
+		title: 'Markus Mau (Hochschule Mainz)',
 		description: `Generative AI models like Dalle, Midjourney, or Stable-Diffusion are increasingly making their
         mark in our design practice. In this workshop, we want to apply such innovative AI tools to
         the field of typography. Does the technology offer a new visual language? How does the

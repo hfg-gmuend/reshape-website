@@ -1,12 +1,13 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
 	export let timeslot = 'tbd';
 	export let title = '';
 	export let subtitle = '';
 	export let description = '';
-	export let expandable = false;
-	export let keycolor = '#f00';
+	export let tint = '';
+	export let controlled = false;
 	let isExpanded = false;
-
 	$: expandable = !!description;
 </script>
 
@@ -14,11 +15,17 @@
 <p
 	class:cursor-pointer={expandable}
 	on:click={() => {
+		//handle from outside
+		if (controlled) {
+			dispatch('click');
+			return;
+		}
+		//handle within
 		if (!expandable) return;
 		isExpanded = !isExpanded;
 	}}
 >
-	<span class="text-{keycolor}" class:text-inherit={!isExpanded}>
+	<span class={controlled ? 'text-' + tint : isExpanded ? 'text-' + tint : 'text-muted'}>
 		<span class="block reshape-lead-medium" class:expandable>{timeslot}</span>
 		<span class="block">{title}</span>
 		<span class="block">{subtitle}</span></span

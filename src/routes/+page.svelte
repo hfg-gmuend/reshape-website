@@ -1,11 +1,17 @@
 <script>
+	import ITEMS_WEDNESDAY from '../data/schedule-wednesday.js';
+	import ITEMS_THURSDAY from '../data/schedule-thursday.js';
+	import ITEMS_FRIDAY from '../data/schedule-friday.js';
+	import WORKSHOPS from '../data/workshops.js';
+
 	import Animation from '$lib/animation/Animation.svelte';
 	import MenuIcon from '$lib/icon-menu.svelte';
 	import SpeakersDesktop from '$lib/speakers-desktop.svelte';
 	import SpeakersMobile from '$lib/speakers-mobile.svelte';
 	import TeamTile from '$lib/team-tile.svelte';
-	import ScheduleItem from '$lib/schedule-item.svelte';
-	import WORKSHOPS from '../data/workshops.js';
+	import Logos from '$lib/logos.svelte';
+	import Schedule from '$lib/schedule.svelte';
+
 	let menuOpen = false;
 
 	function toggleMenu() {
@@ -112,109 +118,23 @@
 		<h2 class="reshape-section-header md:reshape-desktop-section-header">Öffentliches Programm</h2>
 		<p class="mb-8 reshape-lead-light">10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)</p>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<article class="daily-schedule md:grid md:grid-cols-3 gap-10">
-			<h3 class="reshape-subsection-header text-reshape-lila basis-1/2">
+		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila">
+			<h3 slot="heading" class="reshape-subsection-header text-reshape-lila basis-1/2">
 				Mittwoch<br />10.&nbsp;Mai
 			</h3>
-			<ul class="time-table reshape-lead-light">
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						keycolor="reshape-lila"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-lila"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-lila"
-					/>
-				</li>
-			</ul>
-		</article>
+		</Schedule>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<article class="daily-schedule md:grid md:grid-cols-3 gap-10">
-			<h3 class="reshape-subsection-header text-reshape-blau basis-1/2">
+		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau"
+			><h3 slot="heading" class="reshape-subsection-header text-reshape-blau basis-1/2">
 				Donnerstag<br />11.&nbsp;Mai
-			</h3>
-			<ul class="time-table reshape-lead-light">
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-blau"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-blau"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-blau"
-					/>
-				</li>
-			</ul>
-		</article>
+			</h3></Schedule
+		>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<article class="daily-schedule md:grid md:grid-cols-3 gap-10">
-			<h3 class="reshape-subsection-header text-reshape-gruen basis-1/2">
+		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen">
+			<h3 slot="heading" class="reshape-subsection-header text-reshape-gruen basis-1/2">
 				Freitag<br />12.&nbsp;Mai
 			</h3>
-			<ul class="time-table reshape-lead-light">
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-gruen"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-gruen"
-					/>
-				</li>
-				<li>
-					<ScheduleItem
-						timeslot="10:00-13:00"
-						title="Lorem Ipsum"
-						subtitle="Foobar"
-						description="More info here lelelalskdjfa aslkjd fasdf"
-						keycolor="reshape-gruen"
-					/>
-				</li>
-			</ul>
-		</article>
+		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
 		<p class="mt-20 reshape-lead-medium md:reshape-desktop-lead-medium">
 			Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung
@@ -238,22 +158,10 @@
 		</div>
 
 		<div class="inset-negative"><div class="seperator" /></div>
-		<h3 class="reshape-subsection-header mt-8">Workshops</h3>
 
-		<article class="workshop-schedule">
-			<ul class="time-table reshape-lead-light">
-				{#each WORKSHOPS as workshop}
-					<li>
-						<ScheduleItem
-							timeslot={workshop.title}
-							title={workshop.subtitle}
-							subtitle={workshop.host}
-							description={workshop.description}
-						/>
-					</li>
-				{/each}
-			</ul>
-		</article>
+		<Schedule scheduleItems={WORKSHOPS}>
+			<h3 slot="heading" class="reshape-subsection-header basis-1/2">Workshops</h3>
+		</Schedule>
 	</section>
 	<section>
 		<div class="inset-negative"><div class="seperator" /></div>
@@ -363,14 +271,12 @@
 			</p>
 		</div>
 	</section>
-	<section class="h-64">Logos...</section>
+	<section class="pb-8">
+		<Logos />
+	</section>
 </main>
 
 <style>
-	.cover {
-		background: url('$lib/assets/form-background.png');
-	}
-
 	section {
 		margin-top: 120px;
 	}
@@ -408,19 +314,6 @@
 
 	.symposium-firstpara {
 		margin-bottom: 74px;
-	}
-
-	.daily-schedule,
-	.workshop-schedule {
-		padding: 50px 0;
-	}
-
-	ul.time-table > li:not(:last-child) {
-		margin-bottom: 61px;
-	}
-
-	ul.time-table span {
-		display: block;
 	}
 
 	div.seperator {

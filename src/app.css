@@ -116,3 +116,7 @@ body {
 		padding-left: 31px;
 	}
 }
+
+.text-muted {
+	color: #aaa;
+}
