@@ -54,11 +54,17 @@
 <main class="pt-11 inset reshape-gradient-bg">
 	<div class="inset-negative w-screen h-screen">
 		<div class="absolute top-0 right-0 left-0 bottom-0"><Animation /></div>
-		<div class="">
-			<h1 class="z-20 relative text-[70px] md:ml-96">reshape</h1>
-			<h2 class="z-20 relative text-[20px] font-light md:ml-60">
-				Forum for Artificial Intelligence in Art and Design
-			</h2>
+		<div class="inset">
+			<div class="grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2">
+				<div class="hidden md:col-span-1" />
+				<h1 class="z-20 reshape-title">reshape</h1>
+			</div>
+			<div class="grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2">
+				<div class="col-span-1 md:col-span-3" />
+				<h2 class="z-20 reshape-subtitle">
+					Forum for<br />Artificial Intelligence<br />in Art and Design
+				</h2>
+			</div>
 		</div>
 	</div>
 
@@ -225,7 +231,7 @@
 		</div>
 
 		<div class="inset-negative"><div class="seperator" /></div>
-		<h3 class="reshape-subsection-header">Workshops</h3>
+		<h3 class="reshape-subsection-header mt-8">Workshops</h3>
 
 		<article class="workshop-schedule">
 			<ul class="time-table reshape-lead-light">
@@ -370,6 +376,37 @@
 
 	section {
 		margin-top: 120px;
+	}
+
+	.reshape-title {
+		position: relative;
+		font-size: 55px;
+		text-align: right;
+		margin-left: 50%;
+		margin-top: 100px;
+	}
+
+	.reshape-subtitle {
+		position: relative;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 300;
+		margin-left: auto;
+		margin-top: 100px;
+	}
+
+	@media (min-width: 768px) {
+		.reshape-title {
+			font-size: 70px;
+			line-height: 84px;
+			font-weight: 500;
+		}
+
+		.reshape-subtitle {
+			font-size: 20px;
+			line-height: 23px;
+			font-weight: 400;
+		}
 	}
 
 	.symposium-firstpara {
