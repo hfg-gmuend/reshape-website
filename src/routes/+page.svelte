@@ -4,6 +4,7 @@
 	import SpeakerTile from '$lib/speaker-tile.svelte';
 	import TeamTile from '$lib/team-tile.svelte';
 	import Carousel from '$lib/carousel.svelte';
+	import ScheduleItem from '$lib/schedule-item.svelte';
 	let menuOpen = false;
 
 	function toggleMenu() {
@@ -21,7 +22,7 @@
 <!-- Mobile Menu -->
 {#if menuOpen}
 	<nav class="fixed w-full z-30 h-screen pt-11 bg-reshape-mauve inset text-4xl md:hidden">
-		<ul>
+		<ul class="h-full flex flex-col justify-around">
 			{#each menuItems as item}
 				<li on:click={() => (menuOpen = false)}><a href="#{item.link}">{item.title}</a></li>
 			{/each}
@@ -128,25 +129,30 @@
 			</h3>
 			<ul class="time-table reshape-lead-light">
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						keycolor="reshape-lila"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-lila"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-lila"
+					/>
 				</li>
 			</ul>
 		</article>
@@ -157,25 +163,31 @@
 			</h3>
 			<ul class="time-table reshape-lead-light">
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-blau"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-blau"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="font-medium">12:00 – 12:00</span><span>Beginn der Veranstaltung</span><span
-							>Welcome</span
-						>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-blau"
+					/>
 				</li>
 			</ul>
 		</article>
@@ -186,25 +198,31 @@
 			</h3>
 			<ul class="time-table reshape-lead-light">
 				<li>
-					<p>
-						<span class="reshape-lead-medium">12:00 – 12:00</span><span
-							>Beginn der Veranstaltung</span
-						><span>Welcome</span>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-gruen"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="reshape-lead-medium">12:00 – 12:00</span><span
-							>Beginn der Veranstaltung</span
-						><span>Welcome</span>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-gruen"
+					/>
 				</li>
 				<li>
-					<p>
-						<span class="reshape-lead-medium">12:00 – 12:00</span><span
-							>Beginn der Veranstaltung</span
-						><span>Welcome</span>
-					</p>
+					<ScheduleItem
+						timeslot="10:00-13:00"
+						title="Lorem Ipsum"
+						subtitle="Foobar"
+						description="More info here lelelalskdjfa aslkjd fasdf"
+						keycolor="reshape-gruen"
+					/>
 				</li>
 			</ul>
 		</article>
