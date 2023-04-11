@@ -1,10 +1,11 @@
 <script>
 	import Animation from '$lib/animation/Animation.svelte';
 	import MenuIcon from '$lib/icon-menu.svelte';
-	import SpeakerTile from '$lib/speaker-tile.svelte';
+	import SpeakersDesktop from '$lib/speakers-desktop.svelte';
+	import SpeakersMobile from '$lib/speakers-mobile.svelte';
 	import TeamTile from '$lib/team-tile.svelte';
-	import Carousel from '$lib/carousel.svelte';
 	import ScheduleItem from '$lib/schedule-item.svelte';
+	import WORKSHOPS from '../data/workshops.js';
 	let menuOpen = false;
 
 	function toggleMenu() {
@@ -98,23 +99,11 @@
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
 				<div class="overflow-hidden inset-negative md:hidden">
-					<div class="inset">
-						<div class="inset-left">
-							<Carousel autoplay={false} perPage="1">
-								<SpeakerTile name="Simon Maris" />
-								<SpeakerTile name="Alexa Steinbrück" />
-							</Carousel>
-						</div>
-					</div>
+					<SpeakersMobile />
 				</div>
 				<!-- DESKTOP -->
-				<div class="grid grid-cols-5 max-md:hidden md:visible">
-					<SpeakerTile name="Simon Maris" />
-					<SpeakerTile name="Alexa Steinbrück" />
-					<SpeakerTile name="Simon Maris" />
-					<SpeakerTile name="Alexa Steinbrück" />
-					<SpeakerTile name="Simon Maris" />
-					<SpeakerTile name="Alexa Steinbrück" />
+				<div class="max-md:hidden md:visible">
+					<SpeakersDesktop />
 				</div>
 			</div>
 		</div>
@@ -253,26 +242,16 @@
 
 		<article class="workshop-schedule">
 			<ul class="time-table reshape-lead-light">
-				<li>
-					<p>
-						<span class="font-medium">Titel des Workshops</span><span>Workshop-Leiter*in</span>
-					</p>
-				</li>
-				<li>
-					<p>
-						<span class="font-medium">Titel des Workshops</span><span>Workshop-Leiter*in</span>
-					</p>
-				</li>
-				<li>
-					<p>
-						<span class="font-medium">Titel des Workshops</span><span>Workshop-Leiter*in</span>
-					</p>
-				</li>
-				<li>
-					<p>
-						<span class="font-medium">Titel des Workshops</span><span>Workshop-Leiter*in</span>
-					</p>
-				</li>
+				{#each WORKSHOPS as workshop}
+					<li>
+						<ScheduleItem
+							timeslot={workshop.title}
+							title={workshop.subtitle}
+							subtitle={workshop.host}
+							description={workshop.description}
+						/>
+					</li>
+				{/each}
 			</ul>
 		</article>
 	</section>

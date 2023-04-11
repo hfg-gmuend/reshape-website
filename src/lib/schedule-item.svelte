@@ -38,4 +38,16 @@
 		margin-left: 3px;
 		color: 'red';
 	}
+
+	.text-reshape-gruen > .expandable::after {
+		background-image: url('./icon-link-green.svg');
+	}
+
+	.text-reshape-blau > .expandable::after {
+		background-image: url('./icon-link-blue.svg');
+	}
+
+	.text-reshape-lila > .expandable::after {
+		background-image: url('./icon-link-lila.svg');
+	}
 </style>
