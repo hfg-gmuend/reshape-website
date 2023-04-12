@@ -140,7 +140,16 @@
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
 		<p class="mt-20 reshape-lead-medium md:reshape-desktop-lead-medium">
-			Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung
+			<a
+				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
+				target="_blank"
+				rel="noopener noreferrer"
+				>Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung <div
+					class="reshape-link-icon"
+				>
+					&nbsp;
+				</div>
+			</a>
 		</p>
 	</section>
 	<section>
@@ -314,15 +323,5 @@
 
 	div.seperator {
 		border-top: 2px solid black;
-	}
-
-	.reshape-link::after {
-		content: '';
-		display: inline-block;
-		width: 11px;
-		height: 11px;
-		background-image: url('./icon-link.svg');
-		background-repeat: no-repeat;
-		margin-left: 3px;
 	}
 </style>
