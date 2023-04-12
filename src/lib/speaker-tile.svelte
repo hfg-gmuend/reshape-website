@@ -37,7 +37,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-image: url('$lib/assets/test-image-simon-maris.jpg');
+		background-image: url('$lib/assets/form-background.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-blend-mode: screen;

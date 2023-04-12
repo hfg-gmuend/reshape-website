@@ -1,19 +1,18 @@
 export default [
 	{
-		timeslot: '10:00-13:00',
-		title: 'Lorem Ipsum',
-		subtitle: 'Foobar'
+		timeslot: '09:00-13:00',
+		title: 'Talks',
+		subtitle: '(tbd - stay tuned!)'
 	},
 	{
-		timeslot: '13:00-15:00',
-		title: 'Lorem Ipsum',
-		subtitle: 'Foobar',
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
+		timeslot: '12:00-13:00',
+		title: 'Panel',
+		subtitle: 'KITeGG: Learnings from one year of AI education at Art & Design Schools',
+		description: `Das Verbundprojekt KITegg hat die Mission, zu erforschen wie KI und ML in die Gestaltungslehre integriert werden können. Seit mehr als einem Jahr haben die 5 beteiligten Hochschulen nun konkrete Erfahrungen gesammelt. Was können die Mitarbeitenden berichten: Welche Formate haben gut funktioniert und welche weniger gut? Wie priorisiert man innerhalb eines Themas was technologisch komplex ist? Welche Übersetzungen und Vereinfachungen sind nötig? Wie fördert man den nötigen "Rigour" und eine gesunde kritische Haltung angesichts eines Themas was medial überpräsent und oft verzerrt dargestellt wird? Lassen sich Erfahrungen aus dem Bereich von anderen im Gestaltungskontext gelehrten Technologien z.B. Creative Coding auf die Lehre von KI übertragen?`
 	},
 	{
-		timeslot: '15:00-17:00',
-		title: 'I found peace',
-		subtitle: 'Most bestest talk ever',
-		description: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
+		timeslot: '13:00-14:00',
+		title: 'Präsentation der Workshop Ergebnisse',
+		subtitle: ''
 	}
 ];

@@ -71,6 +71,7 @@
 				<div class="col-span-1 md:col-span-3" />
 				<h2 class="z-20 reshape-subtitle">
 					Forum for<br />Artificial Intelligence<br />in Art and Design
+					<br /><br />10-12 May 2023 <br />HfG Schwäbisch-Gmünd
 				</h2>
 			</div>
 		</div>
@@ -90,18 +91,20 @@
 				and in-depth exploration of the many-sided world of creative AI.
 			</p>
 			<p class="reshape-copy max-md:inset-left">
-				Featuring a lineup of thought-provoking talks, engaging panel discussions, and hands-on
-				workshops, we will explore how AI can expand art and design practices and enhance
-				creativity, learn about the challenges and affordances of designing AI-based interfaces and
-				products, and discover best practices for teaching AI to creatives. Join us for a refreshing
-				and in-depth exploration of the many-sided world of creative AI.
+				In anregenden Vorträgen, spannenden Podiumsdiskussionen und praxisbezogenen Workshops
+				erkunden wir, wie KI einerseits Kunst- und Designpraktiken erweitern und Kreativität fördern
+				kann, und erörtern andererseits, die Herausforderungen und Möglichkeiten, die bei der
+				Gestaltung von KI-basierten Schnittstellen und Produkten eine Rolle spielen. Zudem ist es
+				ein Anliegen der Konferenz darüber zu sprechen, wie KI-Skills in die Ausbildung von
+				Designer_innen und Künstler_innen integriert werden können.
 			</p>
 		</div>
 	</section>
 
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header">Speaker&#8203;*innen</h2>
+			<h2 class="reshape-section-header md:reshape-desktop-section-header">Speaker&#8203;:innen</h2>
+			<p class="reshape-copy">tbd (stay tuned!)</p>
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
 				<div class="overflow-hidden inset-negative md:hidden">
@@ -141,7 +144,7 @@
 		</p>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10">
+		<div class="md:grid md:grid-cols-3 gap-10 mb-8">
 			<div class="col-span-2">
 				<h2 class="reshape-section-header md:reshape-desktop-section-header">Internes Programm</h2>
 				<p class="reshape-copy md:reshape-lead-light">
@@ -149,11 +152,9 @@
 				</p>
 			</div>
 			<p class="reshape-copy inset-left mt-4 mb-8">
-				Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
-				berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
-				Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
-				des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
-				von über.
+				Lehrende der KITeGG Partnerhochschulen bieten in den Tagen vor der Konferenz eine Reihe von
+				Workshops, die ein praktisches Erproben der Bandbreite an Möglichkeiten geben, die KI und
+				Machine Learning für Gestalter:innen bereit halten.
 			</p>
 		</div>
 
@@ -166,24 +167,20 @@
 	<section>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-32">
-			Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der Gestaltungslehre.
-			Gefördert vom BMBF.
+			KITeGG - Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der
+			Gestaltungslehre.
 		</p>
 		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40" id="kitegg">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">KITeGG</h2>
 			<p class="reshape-copy max-md:inset-left">
-				Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
-				Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
-				Köln International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen
-				der Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
-				Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
+				Das Verbundvorhaben „KITeGG - KI greifbar machen und begreifen: Technologie und Gesellschaft
+				verbinden durch Gestaltung“ erforscht wie KI in die Gestaltungslehre integriert werden kann.
 			</p>
 			<p class="reshape-copy max-md:inset-left max-md:mt-9">
-				Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
-				berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
-				Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
-				des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
-				von über.
+				In dem BMBF-geförderten Verbundprojekt KITeGG arbeiten und forschen bis Ende 2025 insgesamt
+				fünf Hochschulen an der Integration von KI in der Gestaltungslehre: Die Hochschule Mainz,
+				die Hochschule für Gestaltung Offenbach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
+				Köln International School of Design und die Hochschule Trier.
 			</p>
 		</div>
 	</section>
@@ -193,33 +190,29 @@
 				AI+D Lab
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
-				Themen in die Gestaltungslehre bringen. Projektpartner sind die Hochschule Mainz, die
-				Hochschule für Gestaltung Offen-bach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
-				Köln International School of Design (TH Köln) und die Hochschule Trier. Als “Gestalter*innen
-				der Zukunft” sollen Studierende sowohl über Wissen zu aktuell und zukünftig relevanten
-				Technologien als auch über profunde technische Kenntnisse und die Befähigung verfügen,
+				Mit dem neuen AI+D Lab wurde an der HfG Schwäbisch Gmünd ein Ort geschaffen um sich mit den
+				Möglichkeiten, aber auch den Herausforderungen von künstlicher Intelligenz in der Gestaltung
+				zu beschäftigen: Welche Rolle können Gestalter:innen zukünftig in der (Mit-)Gestaltung von
+				KI-basierten Anwendungen einnehmen und wie müssen sie in der Ausbildung darauf vorbereitet
+				werden? Wie können KI-Technologien gezielt in den Gestaltungsprozess eingebunden werden und
+				wie verändert sich dadurch die Arbeit von Gestalter:innen? Wie können Gestalter:innen
+				wünschenswerte Zukünfte mit KI-Technologien mitgestalten?
 			</p>
-			<p class="reshape-copy max-md:inset-left max-md:mt-9">
-				Nutzer:innen Kontexte sowie ethische und rechtliche Fragestellungen syste-matisch zu
-				berücksichtigen. Sie sollen in der Lage sein, Machine Learning reflektiert als Werkzeug und
-				Material der Gestaltung einzusetzen. Dazu sollen innerhalb der nächsten vier Jahre im Rahmen
-				des Projekts neue Lehrformate, Tools, Symposien und Publikationen entstehen. KITeGG ist eins
-				von über.
-			</p>
+			<p class="reshape-copy max-md:inset-left max-md:mt-9" />
 		</div>
 	</section>
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">AI+D Team</h2>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 col-span-2">
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
-				<TeamTile name="Hartmut Bohnacker" description="Bereich" />
+				<TeamTile name="Rahel Flechtner" description="Visiting professor" />
+				<TeamTile name="Aeneas Stankowski" description="Visiting professor" />
+				<TeamTile name="Felix Sewing" description="AI+D Lab lead" />
+				<TeamTile name="Alexa Steinbrück" description="Researcher" />
+				<TeamTile name="Benedikt Groß" description="Project lead" />
+				<TeamTile name="Hartmut Bohnacker" description="Project lead" />
+				<TeamTile name="Chris Pietsch" description="Researcher" />
+				<TeamTile name="Johannes Rothkegel" description="Student assistant" />
 			</div>
 		</div>
 	</section>
@@ -227,14 +220,17 @@
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">Reshape Team</h2>
 			<div class="max-md:inset-left col-span-2">
-				<p class="reshape-copy"><span class="font-medium">Programm</span><br />Alexa Steinbrück</p>
-				<p>&nbsp;</p>
 				<p class="reshape-copy">
-					<span class="font-medium">Graphic Design</span><br />Lucie Paula Claire de Hair
+					<span class="font-medium">Programm</span><br />Alexa Steinbrück
 				</p>
 				<p>&nbsp;</p>
 				<p class="reshape-copy">
-					<span class="font-medium">Website</span><br />Alexa Steinbrück <br />Hartmut Bohnacker
+					<span class="font-medium">Grafikdesign</span><br />Lucie Paula Claire de Hair, Marlene
+					Metschies, Kirsten Humpfer
+				</p>
+				<p>&nbsp;</p>
+				<p class="reshape-copy">
+					<span class="font-medium">Website</span><br />Alexa Steinbrück
 				</p>
 			</div>
 		</div>
