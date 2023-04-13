@@ -46,10 +46,5 @@ export default [
 		timeslot: 'Designing Prompts',
 		title: 'Benedikt Groß (HfG Schwäbisch-Gmünd)',
 		description: ''
-	},
-	{
-		timeslot: 'tbd',
-		title: 'Aeneas Stankowski (HfG Schwäbisch-Gmünd)',
-		description: ''
 	}
 ];
