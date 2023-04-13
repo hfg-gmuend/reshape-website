@@ -121,19 +121,19 @@
 		<h2 class="reshape-section-header md:reshape-desktop-section-header">Öffentliches Programm</h2>
 		<p class="mb-8 reshape-lead-light">10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)</p>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila">
+		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila" bgMotive="wed">
 			<h3 slot="heading" class="reshape-subsection-header text-reshape-lila basis-1/2">
 				Mittwoch<br />10.&nbsp;Mai
 			</h3>
 		</Schedule>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau"
+		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau" bgMotive="thu"
 			><h3 slot="heading" class="reshape-subsection-header text-reshape-blau basis-1/2">
 				Donnerstag<br />11.&nbsp;Mai
 			</h3></Schedule
 		>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen">
+		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen" bgMotive="fri">
 			<h3 slot="heading" class="reshape-subsection-header text-reshape-gruen basis-1/2">
 				Freitag<br />12.&nbsp;Mai
 			</h3>
@@ -145,7 +145,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				>Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung <div
-					class="reshape-link-icon"
+					class=""
 				>
 					&nbsp;
 				</div>

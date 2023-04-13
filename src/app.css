@@ -122,28 +122,12 @@ body {
 }
 
 .reshape-link::after {
+	content: '';
 	display: inline-block;
-	width: 11px;
-	height: 11px;
+	width: 9px;
+	height: 9px;
 	background-image: url('./icon-link.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-left: 3px;
-}
-
-.reshape-link-icon {
-	display: inline-block;
-	width: 11px;
-	height: 11px;
-	background-image: url('./icon-link.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-left: 3px;
-}
-
-@media (min-width: 768px) {
-	.reshape-link-icon {
-		width: 40px;
-		height: 40px;
-	}
 }

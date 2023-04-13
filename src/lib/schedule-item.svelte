@@ -6,7 +6,6 @@
 	export let subtitle = '';
 	export let description = '';
 	export let color = 'red';
-	export let isExpanded = false;
 	$: expandable = !!description;
 </script>
 
@@ -26,7 +25,6 @@
 		<span class="block">{title}</span>
 		<span class="block">{subtitle}</span></span
 	>
-	<span class:hidden={!isExpanded} class="reshape-copy block mt-4">{description}</span>
 </p>
 
 <style>
@@ -35,8 +33,7 @@
 		display: inline-block;
 		width: 11px;
 		height: 11px;
-		background-image: url('./icon-link.svg');
-		transform: rotate(90deg);
+		background-image: url('./icon-expand.svg');
 		background-repeat: no-repeat;
 		margin-left: 3px;
 		color: 'red';
