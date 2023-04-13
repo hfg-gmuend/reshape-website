@@ -213,15 +213,15 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">AI+D Team</h2>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 col-span-2">
-				<TeamTile name="Rahel Flechtner" description="Visiting professor" />
-				<TeamTile name="Aeneas Stankowski" description="Visiting professor" />
-				<TeamTile name="Felix Sewing" description="AI+D Lab lead" />
-				<TeamTile name="Alexa Steinbrück" description="Researcher" />
-				<TeamTile name="Benedikt Groß" description="Project lead" />
-				<TeamTile name="Hartmut Bohnacker" description="Project lead" />
-				<TeamTile name="Chris Pietsch" description="Researcher" />
-				<TeamTile name="Johannes Rothkegel" description="Student assistant" />
+			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 col-span-2">
+				<TeamTile name="Rahel Flechtner" description="Visiting professor" file="rahel" />
+				<TeamTile name="Aeneas Stankowski" description="Visiting professor" file="aeneas" />
+				<TeamTile name="Felix Sewing" description="AI+D Lab lead" file="felix" />
+				<TeamTile name="Alexa Steinbrück" description="Researcher" file="alexa" />
+				<TeamTile name="Benedikt Groß" description="Project lead" file="bene" />
+				<TeamTile name="Hartmut Bohnacker" description="Project lead" file="hartmut" />
+				<TeamTile name="Chris Pietsch" description="Researcher" file="chris" />
+				<TeamTile name="Johannes Rothkegel" description="Student assistant" file="johannes" />
 			</div>
 		</div>
 	</section>
