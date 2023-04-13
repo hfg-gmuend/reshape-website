@@ -5,9 +5,8 @@
 	export let title = '';
 	export let subtitle = '';
 	export let description = '';
-	export let tint = '';
-	export let controlled = false;
-	let isExpanded = false;
+	export let color = 'red';
+	export let isExpanded = false;
 	$: expandable = !!description;
 </script>
 
@@ -15,17 +14,14 @@
 <p
 	class:cursor-pointer={expandable}
 	on:click={() => {
-		//handle from outside
-		if (controlled) {
-			dispatch('click');
+		if (!expandable) {
 			return;
 		}
-		//handle within
-		if (!expandable) return;
-		isExpanded = !isExpanded;
+		dispatch('click');
+		return;
 	}}
 >
-	<span class={controlled ? 'text-' + tint : isExpanded ? 'text-' + tint : 'text-muted'}>
+	<span class="text-{color}">
 		<span class="block reshape-lead-medium" class:expandable>{timeslot}</span>
 		<span class="block">{title}</span>
 		<span class="block">{subtitle}</span></span

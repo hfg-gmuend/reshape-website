@@ -22,27 +22,18 @@
 	<slot name="heading" />
 	<ul class="time-table reshape-lead-light">
 		{#each scheduleItems as item, i}
-			<!-- Mobile : self-expanding -->
-			<li class="md:hidden">
+			<li>
 				<ScheduleItem
 					timeslot={item.timeslot}
 					title={item.title}
 					subtitle={item.subtitle}
 					description={item.description}
-					tint={keyColor}
-				/>
-			</li>
-			<!-- Desktop : controlled -->
-			<li class="max-md:hidden">
-				<ScheduleItem
-					timeslot={item.timeslot}
-					title={item.title}
-					subtitle={item.subtitle}
-					description={item.description}
-					tint={i === expandedIndex ? keyColor : expandedIndex > -1 ? 'muted' : 'black'}
-					controlled
+					color={i === expandedIndex ? keyColor : expandedIndex > -1 ? 'muted' : 'black'}
 					on:click={() => toggle(i)}
 				/>
+				{#if i === expandedIndex}
+					<div class="md:hidden mt-4"><p class="reshape-copy">{expandedDescription}</p></div>
+				{/if}
 			</li>
 		{/each}
 	</ul>
