@@ -276,14 +276,54 @@
 			</p>
 		</div>
 	</section>
-	<section class="pb-8">
+	<footer class="pb-8">
 		<Logos />
-	</section>
+	</footer>
+
+	<footer class="flex gap-2 p-2 md:p-8 inset-negative border-black border-t-2 md:justify-around">
+		<div class="flex flex-col md:flex-row gap-2 md:gap-4">
+			<a href="https://www.hfg-gmuend.de/datenschutz" target="_blank" rel="noopener noreferrer"
+				>Datenschutzerklärung</a
+			>
+			<a href="https://www.hfg-gmuend.de/impressum" target="_blank" rel="noopener noreferrer"
+				>Impressum</a
+			>
+		</div>
+		<button
+			class="md:hidden reshape-copy flex-grow"
+			on:click={() => {
+				document.body.scrollIntoView();
+			}}
+			>Back to top <svg
+				style:display="inline"
+				style:margin-bottom="5px"
+				width="15"
+				height="15"
+				viewBox="0 0 15 15"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M7.19649 13.5598L7.36396 0.99932M7.36396 0.99932L1 7.36328M7.36396 0.99932L13.7279 7.36328"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</svg></button
+		>
+	</footer>
 </main>
 
 <style>
 	section {
-		margin-top: 120px;
+		margin-bottom: 120px;
+	}
+
+	@media (min-width: 768px) {
+		section {
+			margin-bottom: 250px;
+		}
 	}
 
 	.first-section {
@@ -327,5 +367,16 @@
 
 	div.seperator {
 		border-top: 2px solid black;
+	}
+
+	footer {
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	@media (min-width: 768px) {
+		footer {
+			font-size: 16px;
+		}
 	}
 </style>
