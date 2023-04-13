@@ -59,58 +59,79 @@
 	}
 </script>
 
-<svg viewBox="0 0 100 100">
-	<filter id="blurMe">
-		<feGaussianBlur in="SourceGraphic" stdDeviation={blur} />
-	</filter>
+<div class="wrapper">
+	<div class="wrapper-inner">
+		<svg viewBox="0 0 100 100">
+			<filter id="blurMe">
+				<feGaussianBlur in="SourceGraphic" stdDeviation={blur} />
+			</filter>
 
-	<mask id="gridMask">
-		<g id="grid" fill="white">
-			<Grid
-				{grid}
-				{gridSizeX}
-				{gridSizeY}
-				{s}
-				{outerRadius}
-				{innerRadius}
-				{threshold}
-				{autoAnimate}
-			/>
-		</g>
-	</mask>
+			<mask id="gridMask">
+				<g id="grid" fill="white">
+					<Grid
+						{grid}
+						{gridSizeX}
+						{gridSizeY}
+						{s}
+						{outerRadius}
+						{innerRadius}
+						{threshold}
+						{autoAnimate}
+					/>
+				</g>
+			</mask>
 
-	<rect width="100" height="100" fill={colorBackground} />
+			<rect width="100" height="100" fill={colorBackground} />
 
-	<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
-		<rect width="100" height="100" fill={colorOuter} />
-		<g>
-			<Grid
-				{grid}
-				{gridSizeX}
-				{gridSizeY}
-				{s}
-				{outerRadius}
-				{innerRadius}
-				{threshold}
-				{autoAnimate}
-			/>
-		</g>
-	</g>
-</svg>
+			<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
+				<rect width="100" height="100" fill={colorOuter} />
+				<g>
+					<Grid
+						{grid}
+						{gridSizeX}
+						{gridSizeY}
+						{s}
+						{outerRadius}
+						{innerRadius}
+						{threshold}
+						{autoAnimate}
+					/>
+				</g>
+			</g>
+		</svg>
+	</div>
+</div>
 
 <style>
-	.flex {
-		display: flex;
-	}
-
-	.toolbar {
-		margin-bottom: 10px;
-	}
-
-	svg {
+	.wrapper {
 		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.wrapper-inner {
 		height: 100%;
-		margin-top: 20px;
+	}
+
+	@media (min-width: 768px) {
+		.wrapper-inner {
+			height: auto;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+	}
+	svg {
+		/* width: 100%; */
+		/*max-height: 80vh;*/
+		height: 100%;
+		margin-left: -50%;
+	}
+
+	@media (min-width: 768px) {
+		svg {
+			width: 100%;
+			margin-left: auto;
+		}
 	}
 
 	.spinner,

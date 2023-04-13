@@ -77,7 +77,7 @@
 		</div>
 	</div>
 
-	<section>
+	<section class="first-section">
 		<p class="symposium-firstpara reshape-lead-medium md:reshape-desktop-lead-medium">
 			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
 		</p>
@@ -284,6 +284,10 @@
 <style>
 	section {
 		margin-top: 120px;
+	}
+
+	.first-section {
+		margin-top: 0;
 	}
 
 	.reshape-title {
