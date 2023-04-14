@@ -33,21 +33,21 @@
 		display: inline-block;
 		width: 11px;
 		height: 11px;
-		background-image: url('./icon-expand.svg');
+		background-image: url('/icon-expand.svg');
 		background-repeat: no-repeat;
 		margin-left: 3px;
 		color: 'red';
 	}
 
 	.text-reshape-gruen > .expandable::after {
-		background-image: url('./icon-link-green.svg');
+		background-image: url('/icon-link-green.svg');
 	}
 
 	.text-reshape-blau > .expandable::after {
-		background-image: url('./icon-link-blue.svg');
+		background-image: url('/icon-link-blue.svg');
 	}
 
 	.text-reshape-lila > .expandable::after {
-		background-image: url('./icon-link-lila.svg');
+		background-image: url('/icon-link-lila.svg');
 	}
 </style>

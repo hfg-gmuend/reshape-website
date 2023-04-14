@@ -4,25 +4,25 @@
 
 @font-face {
 	font-family: 'Atlas Grotesk';
-	src: url('fonts/AtlasGrotesk/AtlasGrotesk-Light-Web.woff2');
+	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Light-Web.woff2');
 	font-weight: 300; /*light = 300*/
 }
 
 @font-face {
 	font-family: 'Atlas Grotesk';
-	src: url('fonts/AtlasGrotesk/AtlasGrotesk-Regular-Web.woff2');
+	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Regular-Web.woff2');
 	font-weight: normal; /*normal = 400*/
 }
 
 @font-face {
 	font-family: 'Atlas Grotesk';
-	src: url('fonts/AtlasGrotesk/AtlasGrotesk-Medium-Web.woff2');
+	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Medium-Web.woff2');
 	font-weight: 500; /*medium = 500*/
 }
 
 @font-face {
 	font-family: 'Atlas Grotesk';
-	src: url('fonts/AtlasGrotesk/AtlasGrotesk-Bold-Web.woff2');
+	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Bold-Web.woff2');
 	font-weight: bold; /*bold = 700*/
 }
 
@@ -126,7 +126,7 @@ body {
 	display: inline-block;
 	width: 9px;
 	height: 9px;
-	background-image: url('./icon-link.svg');
+	background-image: url('/icon-link.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-left: 3px;

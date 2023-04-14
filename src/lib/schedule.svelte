@@ -53,14 +53,14 @@
 	}
 
 	.background-motive-wed {
-		background-image: url('./bg-wed.svg');
+		background-image: url('/bg-wed.svg');
 	}
 
 	.background-motive-thu {
-		background-image: url('./bg-thu.svg');
+		background-image: url('/bg-thu.svg');
 	}
 
 	.background-motive-fri {
-		background-image: url('./bg-fri.svg');
+		background-image: url('/bg-fri.svg');
 	}
 </style>
