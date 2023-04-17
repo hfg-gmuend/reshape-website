@@ -8,7 +8,12 @@
 	<div class="inset-left">
 		<Carousel autoplay={false} perPage="1">
 			{#each SPEAKERS as speaker}
-				<SpeakerTile tint="reshape-lila" name={speaker.name} description={speaker.description} />
+				<SpeakerTile
+					tint="reshape-lila"
+					name={speaker.name}
+					description={speaker.description}
+					imageName={speaker.image}
+				/>
 			{/each}
 		</Carousel>
 	</div>

@@ -1,8 +1,13 @@
 export default [
 	{
-		timeslot: '09:00-13:00',
-		title: 'Talks',
-		subtitle: '(tbd - stay tuned!)'
+		timeslot: '09:30-10:30',
+		title: 'Simon Maris',
+		subtitle: 'Talk (tbd)'
+	},
+	{
+		timeslot: '10:30-11:30',
+		title: 'Tom White',
+		subtitle: 'Talk (tbd)'
 	},
 	{
 		timeslot: '12:00-13:00',

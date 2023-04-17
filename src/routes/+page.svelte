@@ -104,7 +104,6 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header">Speaker&#8203;:innen</h2>
-			<p class="reshape-copy">tbd (stay tuned!)</p>
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
 				<div class="overflow-hidden inset-negative md:hidden">

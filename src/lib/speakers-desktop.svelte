@@ -25,6 +25,13 @@
 	function isPartOfRow(idx, rowIndex) {
 		return idx >= rowIndex * nPerGridRow && idx < (rowIndex + 1) * nPerGridRow;
 	}
+
+	function getOpacity(idx, expandedIndex) {
+		if (expandedIndex < 0) {
+			return 1;
+		}
+		return idx !== expandedIndex ? '0.5' : 1;
+	}
 </script>
 
 <div class="grid grid-cols-3">
@@ -32,13 +39,14 @@
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		{#each getItemsPerRow(rowIndex) as item, colIndex}
 			<div
-				style:opacity={idx(rowIndex, colIndex) !== expandedIndex ? '0.5' : 1}
+				style:opacity={getOpacity(idx(rowIndex, colIndex), expandedIndex)}
 				class:cursor-pointer={idx(rowIndex, colIndex) !== expandedIndex}
 				on:click={() => toggle(idx(rowIndex, colIndex))}
 			>
 				<SpeakerTile
 					tint={idx(rowIndex, colIndex) !== expandedIndex && 'reshape-lila'}
 					name={item.name}
+					imageName={item.image}
 				/>
 			</div>
 		{/each}
