@@ -199,13 +199,20 @@
 				AI+D Lab
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
-				Mit dem neuen AI+D Lab wurde an der HfG Schwäbisch Gmünd ein Ort geschaffen um sich mit den
-				Möglichkeiten, aber auch den Herausforderungen von künstlicher Intelligenz in der Gestaltung
-				zu beschäftigen: Welche Rolle können Gestalter:innen zukünftig in der (Mit-)Gestaltung von
-				KI-basierten Anwendungen einnehmen und wie müssen sie in der Ausbildung darauf vorbereitet
-				werden? Wie können KI-Technologien gezielt in den Gestaltungsprozess eingebunden werden und
-				wie verändert sich dadurch die Arbeit von Gestalter:innen? Wie können Gestalter:innen
-				wünschenswerte Zukünfte mit KI-Technologien mitgestalten?
+				Das AI+D Lab ist der Ort an der HfG Schwäbisch Gmünd für Forschung und Lehre, die Künstliche
+				Intelligenz und Design verbindet. In Form generierter Bilder und Videos, intelligenter
+				Sensorsysteme und sprachbasierten Interfaces wird Machine Learning in der Designpraxis immer
+				mehr zum Einsatz kommen. Wir beschäftigen uns mit den Möglichkeiten und Herausforderungen
+				künstlicher Intelligenz in der Gestaltung: Wie können KI-Technologien in den
+				Gestaltungsprozess eingebunden werden und wie verändert sich dadurch die Arbeit von
+				Gestalter*Innen? Welche Rolle können Designer*Innen in der (Mit-)Gestaltung von KI-basierten
+				Anwendungen einnehmen und wie müssen sie in der Ausbildung darauf vorbereitet werden und wie
+				können wir wünschenswerte Zukünfte mit KI-Technologien gestalten? Um KI-Technologien im
+				Gestaltungsprozess einsetzen zu können, ist es wichtig, fundierte Kenntnisse über die
+				Möglichkeiten und Grenzen dieser Technologie aufzubauen. Das Lab ist als physischer Ort die
+				erste Anlaufstelle für Studierende und Lehrende und stellt die technische Infrastruktur für
+				Projekte und Experimente mit unterschiedlichen KI-Modellen und Technologien zur Verfügung.
+				Das AI+D Lab ist Teil des Verbundprojektes KITeGG – KI greifbar machen und begreifen
 			</p>
 			<p class="reshape-copy max-md:inset-left max-md:mt-9" />
 		</div>
