@@ -29,16 +29,18 @@
 <!-- Mobile Menu -->
 {#if menuOpen}
 	<nav class="fixed w-full z-30 h-screen pt-11 bg-reshape-mauve inset text-4xl md:hidden">
-		<ul class="h-full flex flex-col justify-around">
+		<ul class="h-full flex flex-col pt-[80px]">
 			{#each menuItems as item}
-				<li on:click={() => (menuOpen = false)}><a href="#{item.link}">{item.title}</a></li>
+				<li class="basis-[95px]" on:click={() => (menuOpen = false)}>
+					<a href="#{item.link}">{item.title}</a>
+				</li>
 			{/each}
 		</ul>
 	</nav>
 {/if}
 
 <header
-	class="fixed w-full z-30 inset border-y-2 border-black h-11 flex items-center"
+	class="fixed w-full z-30 inset border-y-2 border-black h-11 flex items-center reshape-lead-light"
 	class:bg-white={!menuOpen}
 	class:bg-reshape-mauve={menuOpen}
 >
@@ -78,12 +80,12 @@
 	</div>
 
 	<section class="first-section">
-		<p class="symposium-firstpara reshape-lead-medium md:reshape-desktop-lead-medium">
+		<p class="mb-[80px] md:mb-[120px] reshape-lead-medium md:reshape-desktop-lead-medium">
 			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
 		</p>
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div />
-			<p class="reshape-copy max-md:inset-left mb-16 border-black">
+			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0 border-black">
 				Featuring a lineup of thought-provoking talks, engaging panel discussions, and hands-on
 				workshops, we will explore how AI can expand art and design practices and enhance
 				creativity, learn about the challenges and affordances of designing AI-based interfaces and
@@ -101,9 +103,11 @@
 		</div>
 	</section>
 
-	<section>
+	<section class="mt-[120px] md:mt-[250px]">
 		<div class="md:grid md:grid-cols-3 gap-10">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header">Speaker&#8203;:innen</h2>
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-0">
+				Speaker&#8203;:innen
+			</h2>
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
 				<div class="overflow-hidden inset-negative md:hidden">
@@ -116,29 +120,44 @@
 			</div>
 		</div>
 	</section>
-	<section id="program">
-		<h2 class="reshape-section-header md:reshape-desktop-section-header">Öffentliches Programm</h2>
-		<p class="mb-8 reshape-lead-light">10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)</p>
+	<section id="program" class="mt-[250px]">
+		<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
+			Öffentliches Programm
+		</h2>
+		<p class="mb-[55px] md:mb-[65px] reshape-lead-light">
+			10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)
+		</p>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila" bgMotive="wed">
-			<h3 slot="heading" class="reshape-subsection-header text-reshape-lila basis-1/2">
+			<h3
+				slot="heading"
+				class="reshape-subsection-header text-reshape-lila basis-1/2 mb-[55px] md:mb-0"
+			>
 				Mittwoch<br />10.&nbsp;Mai
 			</h3>
 		</Schedule>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau" bgMotive="thu"
-			><h3 slot="heading" class="reshape-subsection-header text-reshape-blau basis-1/2">
+			><h3
+				slot="heading"
+				class="reshape-subsection-header text-reshape-blau basis-1/2 mb-[55px] md:mb-0"
+			>
 				Donnerstag<br />11.&nbsp;Mai
 			</h3></Schedule
 		>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen" bgMotive="fri">
-			<h3 slot="heading" class="reshape-subsection-header text-reshape-gruen basis-1/2">
+			<h3
+				slot="heading"
+				class="reshape-subsection-header text-reshape-gruen basis-1/2 mb-[55px] md:mb-0"
+			>
 				Freitag<br />12.&nbsp;Mai
 			</h3>
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
-		<p class="mt-20 reshape-lead-medium md:reshape-desktop-lead-medium">
+		<p
+			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[960px]"
+		>
 			<a
 				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
 				target="_blank"
@@ -151,15 +170,17 @@
 			</a>
 		</p>
 	</section>
-	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 mb-8">
+	<section class="mt-[165px] md:mt-[300px]">
+		<div class="md:grid md:grid-cols-3 gap-10 md:mb-[55px]">
 			<div class="col-span-2">
-				<h2 class="reshape-section-header md:reshape-desktop-section-header">Internes Programm</h2>
+				<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
+					Internes Programm
+				</h2>
 				<p class="reshape-copy md:reshape-lead-light">
 					8. Mai 2022 – 10. Mai 2022 <br />(Montag bis Mittwoch)
 				</p>
 			</div>
-			<p class="reshape-copy inset-left mt-4 mb-8">
+			<p class="reshape-copy inset-left mt-[25px] mb-[55px] md:mt-0 md:mb-0">
 				Lehrende der KITeGG Partnerhochschulen bieten in den Tagen vor der Konferenz eine Reihe von
 				Workshops, die ein praktisches Erproben der Bandbreite an Möglichkeiten geben, die KI und
 				Machine Learning für Gestalter:innen bereit halten.
@@ -169,22 +190,26 @@
 		<div class="inset-negative"><div class="seperator" /></div>
 
 		<Schedule scheduleItems={WORKSHOPS}>
-			<h3 slot="heading" class="reshape-subsection-header basis-1/2">Workshops</h3>
+			<h3 slot="heading" class="reshape-subsection-header basis-1/2 mb-[55px] md:mb-0">
+				Workshops
+			</h3>
 		</Schedule>
 	</section>
 	<section>
 		<div class="inset-negative"><div class="seperator" /></div>
-		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-32">
+		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[165px] md:mt-[250px]">
 			KITeGG - Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der
 			Gestaltungslehre.
 		</p>
-		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40" id="kitegg">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">KITeGG</h2>
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[120px]" id="kitegg">
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
+				KITeGG
+			</h2>
 			<p class="reshape-copy max-md:inset-left">
 				Das Verbundvorhaben „KITeGG - KI greifbar machen und begreifen: Technologie und Gesellschaft
 				verbinden durch Gestaltung“ erforscht wie KI in die Gestaltungslehre integriert werden kann.
 			</p>
-			<p class="reshape-copy max-md:inset-left max-md:mt-9">
+			<p class="reshape-copy max-md:inset-left mt-[25px] md:mt-0">
 				In dem BMBF-geförderten Verbundprojekt KITeGG arbeiten und forschen bis Ende 2025 insgesamt
 				fünf Hochschulen an der Integration von KI in der Gestaltungslehre: Die Hochschule Mainz,
 				die Hochschule für Gestaltung Offenbach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
@@ -193,8 +218,8 @@
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40" id="ai-d-lab">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header max-md:mt-20">
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]" id="ai-d-lab">
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
 				AI+D Lab
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
@@ -213,13 +238,17 @@
 				Projekte und Experimente mit unterschiedlichen KI-Modellen und Technologien zur Verfügung.
 				Das AI+D Lab ist Teil des Verbundprojektes KITeGG – KI greifbar machen und begreifen
 			</p>
-			<p class="reshape-copy max-md:inset-left max-md:mt-9" />
+			<p class="reshape-copy max-md:inset-left" />
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 md:mt-40">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">AI+D Team</h2>
-			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 col-span-2">
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
+				AI+D Team
+			</h2>
+			<div
+				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-[55px] md:gap-y-[65px] col-span-2"
+			>
 				<TeamTile name="Rahel Flechtner" description="Visiting professor" file="rahel" />
 				<TeamTile name="Aeneas Stankowski" description="Visiting professor" file="aeneas" />
 				<TeamTile name="Felix Sewing" description="AI+D Lab lead" file="felix" />
@@ -232,41 +261,42 @@
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">Reshape Team</h2>
-			<div class="max-md:inset-left col-span-2">
+		<div class="md:grid md:grid-cols-3 gap-10 md:mt-[250px]">
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-[80px] md:mt-0">
+				Reshape Team
+			</h2>
+			<div class="max-md:inset-left col-span-2 mt-[55px] md:mt-[25px]">
 				<p class="reshape-copy">
 					<span class="font-medium">Programm</span><br />Alexa Steinbrück
 				</p>
-				<p>&nbsp;</p>
-				<p class="reshape-copy">
+				<p class="reshape-copy mt-[25px] md:mt-[25px]">
 					<span class="font-medium">Grafikdesign</span><br />Lucie Paula Claire de Hair, Marlene
 					Metschies, Kirsten Humpfer
 				</p>
-				<p>&nbsp;</p>
-				<p class="reshape-copy">
+				<p class="reshape-copy mt-[25px] md:mt-[25px]">
 					<span class="font-medium">Website</span><br />Alexa Steinbrück
 				</p>
 			</div>
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-20">Kontakt</h2>
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
+			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
+				Kontakt
+			</h2>
 			<p class="reshape-copy">
 				<span class="font-medium">Hoch­schule für Gestal­tung Schwä­bisch Gmünd</span>
 				<br />Univer­sity of Applied Sciences <br />Rektor-Klaus-Straße 100 <br />D‑73525
 				Schwä­bisch Gmünd
 				<a
-					class="block reshape-link mt-8"
+					class="block reshape-link mt-[25px] md:mt-0"
 					href="https://goo.gl/maps/FCYPLeJzBLvpGkQNA"
 					target="_blank"
 					rel="noopener noreferrer">Google Maps</a
 				>
 			</p>
-			<p class="reshape-copy max-md:mt-14">
-				<span class="font-medium block mb-6">Let's get social</span>
-				<br />
+			<p class="reshape-copy mt-[55px] md:mt-0">
+				<span class="font-medium block mb-[25px] md:mb-0">Let's get social</span>
 				<a
 					class="reshape-link mr-14"
 					href="https://www.instagram.com/hfg.gmuend/?hl=en"
@@ -282,7 +312,7 @@
 			</p>
 		</div>
 	</section>
-	<footer class="pb-8">
+	<footer class="pb-8 mt-[120px] md:mt-[250px]">
 		<Logos />
 	</footer>
 
@@ -322,20 +352,6 @@
 </main>
 
 <style>
-	section {
-		margin-bottom: 120px;
-	}
-
-	@media (min-width: 768px) {
-		section {
-			margin-bottom: 250px;
-		}
-	}
-
-	.first-section {
-		margin-top: 0;
-	}
-
 	.reshape-title {
 		position: relative;
 		font-size: 55px;
@@ -365,10 +381,6 @@
 			line-height: 23px;
 			font-weight: 400;
 		}
-	}
-
-	.symposium-firstpara {
-		margin-bottom: 74px;
 	}
 
 	div.seperator {

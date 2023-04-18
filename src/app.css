@@ -87,19 +87,16 @@ body {
 	.reshape-section-header {
 		font-size: 40px;
 		line-height: 48px;
-		margin-bottom: 22px;
 	}
 	.reshape-desktop-section-header {
 		font-size: 60px;
 		line-height: 72px;
-		margin: 0;
 	}
 }
 
 .reshape-subsection-header {
 	font-size: 40px;
 	line-height: 48px;
-	margin-bottom: 22px;
 }
 
 @responsive {

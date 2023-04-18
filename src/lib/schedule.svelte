@@ -19,12 +19,12 @@
 	}
 </script>
 
-<article class="md:grid md:grid-cols-3 gap-10 background-motive-{bgMotive} inset-negative py-8">
-	<div class="inset">
+<article class=" background-motive-{bgMotive} inset-negative py-[55px] md:py-[65px]">
+	<div class="inset md:grid md:grid-cols-3 gap-10">
 		<slot name="heading" />
 		<ul class="time-table reshape-lead-light">
 			{#each scheduleItems as item, i}
-				<li>
+				<li class="mb-[55px] md:mb-[55px]">
 					<ScheduleItem
 						timeslot={item.timeslot}
 						title={item.title}
@@ -39,15 +39,11 @@
 				</li>
 			{/each}
 		</ul>
+		<div><p class="reshape-copy max-md:hidden">{expandedDescription}</p></div>
 	</div>
-	<div><p class="reshape-copy max-md:hidden">{expandedDescription}</p></div>
 </article>
 
 <style>
-	ul.time-table > li:not(:last-child) {
-		margin-bottom: 61px;
-	}
-
 	article {
 		background-size: cover;
 	}

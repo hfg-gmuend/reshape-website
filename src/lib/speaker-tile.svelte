@@ -17,8 +17,8 @@
 		</div>
 	</div>
 
-	<h3 class="mt-5 block reshape-lead-light">{name}</h3>
-	<p class="reshape-copy mt-4">
+	<h3 class="mt-[25px] md:mt-[15px] block reshape-lead-light">{name}</h3>
+	<p class="reshape-copy mt-4 md:mt-0">
 		{description}
 	</p>
 </div>

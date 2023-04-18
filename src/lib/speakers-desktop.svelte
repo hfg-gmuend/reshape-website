@@ -34,7 +34,7 @@
 	}
 </script>
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 gap-y-[65px]">
 	{#each Array(nGridRows) as _, rowIndex}
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		{#each getItemsPerRow(rowIndex) as item, colIndex}
