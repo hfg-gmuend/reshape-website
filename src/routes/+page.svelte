@@ -80,7 +80,9 @@
 	</div>
 
 	<section class="first-section">
-		<p class="mb-[80px] md:mb-[120px] reshape-lead-medium md:reshape-desktop-lead-medium">
+		<p
+			class="mb-[80px] md:mb-[120px] reshape-lead-medium md:reshape-desktop-lead-medium max-w-[1200px]"
+		>
 			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
 		</p>
 		<div class="md:grid md:grid-cols-3 gap-10">
@@ -156,7 +158,7 @@
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
 		<p
-			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[960px]"
+			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[1200px]"
 		>
 			<a
 				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
