@@ -56,6 +56,26 @@
 		background-image: url($lib/assets/speaker-portraits/andreas-refsgaard.jpg);
 	}
 
+	.speaker-nadia-piet {
+		background-image: url($lib/assets/speaker-portraits/nadia-piet.jpg);
+	}
+
+	.speaker-catherine-breslin {
+		background-image: url($lib/assets/speaker-portraits/catherine-breslin.jpg);
+	}
+
+	.speaker-ploipailin-flynn {
+		background-image: url($lib/assets/speaker-portraits/ploipailin-flynn.jpg);
+	}
+
+	.speaker-bjorn-karmann {
+		background-image: url($lib/assets/speaker-portraits/bjorn-karmann.jpg);
+	}
+
+	.speaker-tom-white {
+		background-image: url($lib/assets/speaker-portraits/tom-white.jpg);
+	}
+
 	.speaker-image:hover {
 		background-blend-mode: normal;
 		border-color: inherit;
