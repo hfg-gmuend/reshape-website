@@ -1,12 +1,13 @@
 <script>
+	import { onMount } from 'svelte';
+	import chroma from 'chroma-js';
 	import Grid from './Grid.svelte';
-	import Square from './Square.svelte';
-	import Joint from './Joint.svelte';
-	import { tweened } from 'svelte/motion';
-	import { sineInOut } from 'svelte/easing';
+
+	// Number of squares
+	let squareCount = 14;
 
 	// Size of the squares
-	let s = 20;
+	let squareSize = 20;
 	// Outer corner radius of the squares
 	let outerRadius = 2.5;
 	// Inner corner radius of the joints
@@ -14,128 +15,229 @@
 	// Size of the blur
 	let blur = 1;
 
-	let colorOuter = '#daf';
+	let colorOuter = '#B468FF';
 	let colorInner = '#fff';
 	let colorBackground = '#fff';
 
-	// Threshold parameter for the animation when showing (or hiding) squares.
+	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
+	let colors = [
+		'#B468FF',
+		'#B468FF',
+		'#3636FF',
+		'#3636FF',
+		'#548ABA',
+		'#8CCE00',
+		'#8CCE00',
+		'#548ABA',
+		'#3636FF',
+		'#3636FF',
+		'#B468FF'
+	];
+	let colorScale = chroma
+		.scale(colors)
+		.domain([0, 0.24, 0.3, 0.44, 0.47, 0.5, 0.74, 0.77, 0.8, 0.94, 1])
+		.mode('lch');
+
+	// length in seconds for the color cycling
+	let colorCycleLength = 24;
+
+	// Threshold parameter for the animation when showing (or hiding) and moving squares.
 	// The animation runs from 0 to 1. When reaching the threshold, the circle will be
 	// full in size. The rest of the time is used to grow the joints and reduce the corner radius.
-	let threshold = 0.8;
+	let animationThreshold = 0.2;
 	// Duration of the animations
-	let duration = 600;
+	let duration = 500;
 	// Provide a function for the duration. This way this parameter is dynamic for the tweens.
 	let animationDuration = (oldVal, newVal) => {
 		return duration;
 	};
+	// Gives the interval in milliseconds after which animations will start
+	let animationInterval = 1000;
+	// Gives the probability in percent for a square to move
+	let animationProbability = 40;
+
 	// Automatic animation on or off
 	let autoAnimate = true;
 	let aniButtonText = autoAnimate ? 'Stop Animation' : 'Start Animation';
 
-	// Organizing the grid
-	let gridSizeX = 6;
+	// Organizing the grid. The grid is a 2d-Array filled with objects.
+	// This way, the squares can change the values of the cells and other squares will know.
+	let margin = squareSize / 2;
+	let gridSizeX = 7;
 	let gridSizeY = 6;
-	let grid = [];
-	for (let yi = 0; yi < gridSizeX; yi++) {
-		let row = [];
-		for (let xi = 0; xi < gridSizeX; xi++) {
-			// Some cells of the grid should never be present: all cells at the border and every second cell
-			if ((xi + yi) % 2 == 0 && xi > 0 && xi < gridSizeX - 1 && yi > 0 && yi < gridSizeY - 1) {
-				// Presence is a number from 0 to 1 and represents the visibility status of a square.
-				// Let's start with a random pattern with some squares visible
-				let presence = Math.random() < 0.5 ? 1 : 0;
-				// Make presence to a dynamic variable
-				const p = tweened(presence, {
-					duration: animationDuration,
-					easing: sineInOut
-				});
-				row.push({ active: true, presence: p, xi: xi, yi: yi });
-			} else {
-				const p = tweened(0);
-				row.push({ active: false, presence: p, xi: xi, yi: yi });
-			}
+	let width = gridSizeX * squareSize + margin * 2;
+	let height = gridSizeY * squareSize + margin * 2;
+
+	function toggleAnimation() {
+		autoAnimate = !autoAnimate;
+		aniButtonText = autoAnimate ? 'Stop Animation' : 'Start Animation';
+	}
+
+	// animate color
+	onMount(() => {
+		let frame;
+
+		function loop() {
+			frame = requestAnimationFrame(loop);
+			let millis = performance.now() % (colorCycleLength * 1000);
+			colorOuter = colorScale(millis / (colorCycleLength * 1000)).hex();
 		}
-		grid.push(row);
+
+		loop();
+
+		return () => cancelAnimationFrame(frame);
+	});
+
+	// element is the svg element itself or a container in which the svg is nested. If undefined, the document is searched.
+	// if fileName is undefined it will be constructed with date and time information
+	function saveSVG(element, fileName) {
+		if (!element) {
+			element = document.querySelector('svg');
+			console.log(element);
+		}
+
+		if (!fileName) {
+			let d = new Date();
+			d = d.toISOString();
+			d = d.replace('T', ' ');
+			d = d.replace('Z', '');
+			d = d.replaceAll(':', '.');
+			fileName = 'image_' + d + '.svg';
+		}
+
+		let svgString =
+			element.nodeName == 'svg' ? element.outerHTML : element.querySelector('svg').outerHTML;
+
+		download(svgString, fileName, 'image/svg+xml');
+	}
+
+	// Function to download data to a file
+	function download(data, filename, type) {
+		let file = new Blob([data], { type: type });
+		if (window.navigator.msSaveOrOpenBlob)
+			// IE10+
+			window.navigator.msSaveOrOpenBlob(file, filename);
+		else {
+			// Others
+			let a = document.createElement('a'),
+				url = URL.createObjectURL(file);
+			a.href = url;
+			a.download = filename;
+			document.body.appendChild(a);
+			a.click();
+			setTimeout(function () {
+				document.body.removeChild(a);
+				window.URL.revokeObjectURL(url);
+			}, 0);
+		}
 	}
 </script>
 
-<div class="wrapper">
-	<div class="wrapper-inner">
-		<svg viewBox="0 0 100 100">
-			<filter id="blurMe">
-				<feGaussianBlur in="SourceGraphic" stdDeviation={blur} />
-			</filter>
+<!-- <div class="flex toolbar">
+  <ColorPicker bind:hex={colorBackground} label="Background color" />
+  <ColorPicker bind:hex={colorOuter} label="Shape outer color" />
+  <ColorPicker bind:hex={colorInner} label="Shape inner color" />
+</div> -->
 
-			<mask id="gridMask">
-				<g id="grid" fill="white">
-					<Grid
-						{grid}
-						{gridSizeX}
-						{gridSizeY}
-						{s}
-						{outerRadius}
-						{innerRadius}
-						{threshold}
-						{autoAnimate}
-					/>
-				</g>
-			</mask>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 {width} {height}"
+>
+	<filter id="blurMe">
+		<feGaussianBlur in="SourceGraphic" stdDeviation={blur} />
+	</filter>
 
-			<rect width="100" height="100" fill={colorBackground} />
+	<symbol id="gridSymbol" {width} {height} viewbox="0 0 {width} {height}">
+		<Grid
+			{squareCount}
+			{gridSizeX}
+			{gridSizeY}
+			{margin}
+			{squareSize}
+			{outerRadius}
+			{innerRadius}
+			{autoAnimate}
+			{animationDuration}
+			{animationThreshold}
+			{animationInterval}
+			{animationProbability}
+		/>
+	</symbol>
 
-			<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
-				<rect width="100" height="100" fill={colorOuter} />
-				<g>
-					<Grid
-						{grid}
-						{gridSizeX}
-						{gridSizeY}
-						{s}
-						{outerRadius}
-						{innerRadius}
-						{threshold}
-						{autoAnimate}
-					/>
-				</g>
-			</g>
-		</svg>
-	</div>
-</div>
+	<mask id="gridMask">
+		<g id="grid" fill="white" stroke="white" stroke-width="0.5">
+			<use href="#gridSymbol" />
+		</g>
+	</mask>
+
+	<rect id="gridBackground" {width} {height} fill={colorBackground} />
+
+	<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
+		<rect id="gridColor" {width} {height} fill={colorOuter} />
+		<g>
+			<use href="#gridSymbol" />
+		</g>
+	</g>
+</svg>
 
 <style>
-	.wrapper {
-		width: 100%;
-		height: 100vh;
-		overflow: hidden;
+	/* .flex {
+    display: flex;
+  } */
+
+	.toolbar {
+		margin-bottom: 10px;
 	}
 
-	.wrapper-inner {
-		height: 100%;
-	}
-
-	@media (min-width: 768px) {
-		.wrapper-inner {
-			height: auto;
-			max-width: 900px;
-			margin: 0 auto;
-		}
-	}
 	svg {
-		/* width: 100%; */
-		/*max-height: 80vh;*/
+		width: 100%;
 		height: 100%;
-		margin-left: -50%;
-	}
-
-	@media (min-width: 768px) {
-		svg {
-			width: 100%;
-			margin-left: auto;
-		}
+		margin-top: 20px;
 	}
 
 	.spinner,
 	button {
 		margin-right: 20px;
 	}
+
+	/* The animation code */
+	/* @keyframes colorCycle {
+    0% {
+      fill: #B468FF;
+    }
+    20% {
+      fill: #B468FF;
+    }
+    30% {
+      fill: #3636FF;
+    }
+    40% {
+      fill: #3636FF;
+    }
+    50% {
+      fill: #8CCE00;
+    }
+    70% {
+      fill: #8CCE00;
+    }
+    80% {
+      fill: #3636FF;
+    }
+    90% {
+      fill: #3636FF;
+    }
+    100% {
+      fill: #B468FF;
+    }
+  } */
+
+	/* The element to apply the animation to */
+	/* #gridColor {
+    fill: red;
+    animation-name: colorCycle;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+  } */
 </style>

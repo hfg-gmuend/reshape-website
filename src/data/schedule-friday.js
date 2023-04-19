@@ -2,12 +2,14 @@ export default [
 	{
 		timeslot: '09:30-10:30',
 		title: 'Simon Maris',
-		subtitle: 'Talk (tbd)'
+		subtitle: 'Talk (tbd)',
+		description: `tbd`
 	},
 	{
 		timeslot: '10:30-11:30',
 		title: 'Tom White',
-		subtitle: 'Talk (tbd)'
+		subtitle: 'Talk (tbd)',
+		description: `tbd`
 	},
 	{
 		timeslot: '12:00-13:00',
@@ -18,6 +20,7 @@ export default [
 	{
 		timeslot: '13:00-14:00',
 		title: 'Präsentation der Workshop Ergebnisse',
-		subtitle: ''
+		subtitle: '',
+		description: `Casual presentation of results and learnings throughout the workshops during the beginning of the week`
 	}
 ];

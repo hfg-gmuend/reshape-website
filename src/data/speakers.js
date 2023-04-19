@@ -8,12 +8,12 @@ export default [
 	},
 	{
 		name: 'Catherine Breslin',
-		description: ``,
+		description: `Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She is excited by the application of research to real-world problems involving speech and language at scale.`,
 		image: 'catherine-breslin'
 	},
 	{
 		name: 'Ploipailin Flynn',
-		description: ``,
+		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI ( antiracistby.design ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `,
 		image: 'ploipailin-flynn'
 	},
 	{
@@ -23,7 +23,7 @@ export default [
 	},
 	{
 		name: 'Bjørn Karmann',
-		description: ``,
+		description: `Bjørn Karmann is a senior experience and interaction designer based in Amsterdam. Currently, he designs real and speculative futures at oio.`,
 		image: 'bjorn-karmann'
 	},
 	{
@@ -34,7 +34,8 @@ export default [
 	},
 	{
 		name: 'Tom White',
-		description: '',
+		description: `Tom White is a New Zealand based artist investigating artificial intelligence and machine perception. He is also a lecturer teaching computational design and creative AI at the Victoria University of Wellington School of Design. His artwork investigates the Algorithmic Gaze: how machines see, know, and articulate the world. As machine perception becomes more pervasive in our daily lives, the world as seen by computers becomes our dominant reality. White explores this phenomenon in his work. Collaborating with AI systems, White creates physical abstract prints that are reliably classified by neural networks. It’s art by AI, for AI. By giving the algorithms a voice to speak in, we are better able to see the world through the eyes of a machine.
+		`,
 		image: 'tom-white'
 	},
 	{
