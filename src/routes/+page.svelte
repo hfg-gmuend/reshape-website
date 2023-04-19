@@ -416,7 +416,6 @@
 	}
 
 	.animation-fallback-gif {
-		background-color: red;
 		background-image: url('$lib/assets/animation-20fps-noloop.gif');
 	}
 </style>
