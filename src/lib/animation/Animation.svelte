@@ -187,57 +187,9 @@
     display: flex;
   } */
 
-	.toolbar {
-		margin-bottom: 10px;
-	}
-
 	svg {
 		width: 100%;
 		height: 100%;
-		margin-top: 20px;
+		padding-bottom: 2px;
 	}
-
-	.spinner,
-	button {
-		margin-right: 20px;
-	}
-
-	/* The animation code */
-	/* @keyframes colorCycle {
-    0% {
-      fill: #B468FF;
-    }
-    20% {
-      fill: #B468FF;
-    }
-    30% {
-      fill: #3636FF;
-    }
-    40% {
-      fill: #3636FF;
-    }
-    50% {
-      fill: #8CCE00;
-    }
-    70% {
-      fill: #8CCE00;
-    }
-    80% {
-      fill: #3636FF;
-    }
-    90% {
-      fill: #3636FF;
-    }
-    100% {
-      fill: #B468FF;
-    }
-  } */
-
-	/* The element to apply the animation to */
-	/* #gridColor {
-    fill: red;
-    animation-name: colorCycle;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  } */
 </style>

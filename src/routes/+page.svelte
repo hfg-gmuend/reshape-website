@@ -64,7 +64,10 @@
 
 <main class=" inset reshape-gradient-bg">
 	<div class="pt-11 inset-negative w-screen h-screen border-b-2 border-black">
-		<div class="absolute top-0 right-0 left-0 bottom-0"><Animation /></div>
+		<!-- Desktop Animation -->
+		<div class="absolute top-0 right-0 left-0 bottom-0 max-md:hidden"><Animation /></div>
+		<!-- End of Desktop Animation -->
+		<div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden" />
 		<div class=" absolute top-0 right-0 left-0 bottom-0">
 			<div class="absolute left-0 bottom-0 right-0">
 				<div class="inset pb-[24px] flex items-end justify-between">
@@ -410,5 +413,10 @@
 		footer {
 			font-size: 16px;
 		}
+	}
+
+	.animation-fallback-gif {
+		background-color: red;
+		background-image: url('$lib/assets/animation-20fps-noloop.gif');
 	}
 </style>
