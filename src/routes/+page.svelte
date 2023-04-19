@@ -81,15 +81,17 @@
 					<LabLogo />
 				</div>
 			</div>
-			<div class="grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2">
-				<div class="hidden md:col-span-1" />
-				<h1 class="z-20 reshape-title">reshape</h1>
-			</div>
-			<div class="grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2">
-				<div class="col-span-1 md:col-span-3" />
-				<h2 class="z-20 reshape-subtitle">
-					Forum for<br />Artificial Intelligence<br />in Art and Design
-				</h2>
+			<div class="absolute top-0 left-0 bottom-0 right-0">
+				<div class="h-full inset grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2 content-center">
+					<div class="md:col-span-2" />
+
+					<div class="-ml-[50%]">
+						<h1 class="z-20 reshape-title">reshape</h1>
+						<h2 class="z-20 reshape-subtitle">
+							Forum for<br />Artificial Intelligence<br />in Art and Design
+						</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -372,9 +374,6 @@
 	.reshape-title {
 		position: relative;
 		font-size: 55px;
-		text-align: right;
-		margin-left: 50%;
-		margin-top: 100px;
 	}
 
 	.reshape-subtitle {
@@ -382,8 +381,6 @@
 		font-size: 16px;
 		line-height: 19px;
 		font-weight: 300;
-		margin-left: auto;
-		margin-top: 100px;
 	}
 
 	@media (min-width: 768px) {
