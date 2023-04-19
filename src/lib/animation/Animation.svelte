@@ -9,15 +9,15 @@
 	// Size of the squares
 	let squareSize = 20;
 	// Outer corner radius of the squares
-	let outerRadius = 2.5;
+	let outerRadius = 1.8;
 	// Inner corner radius of the joints
-	let innerRadius = 5;
+	let innerRadius = 3.6;
 	// Size of the blur
-	let blur = 1;
+	let blur = 1.5;
 
 	let colorOuter = '#B468FF';
 	let colorInner = '#fff';
-	let colorBackground = '#fff';
+	let colorBackground = '#fff0';
 
 	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
 	let colors = [
@@ -46,13 +46,13 @@
 	// full in size. The rest of the time is used to grow the joints and reduce the corner radius.
 	let animationThreshold = 0.2;
 	// Duration of the animations
-	let duration = 500;
+	let duration = 600;
 	// Provide a function for the duration. This way this parameter is dynamic for the tweens.
 	let animationDuration = (oldVal, newVal) => {
 		return duration;
 	};
 	// Gives the interval in milliseconds after which animations will start
-	let animationInterval = 1000;
+	let animationInterval = 800;
 	// Gives the probability in percent for a square to move
 	let animationProbability = 40;
 
