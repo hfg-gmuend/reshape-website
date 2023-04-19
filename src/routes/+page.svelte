@@ -6,6 +6,7 @@
 
 	import Animation from '$lib/animation/Animation.svelte';
 	import MenuIcon from '$lib/icon-menu.svelte';
+	import LabLogo from '$lib/lab-logo-weiss.svelte';
 	import SpeakersDesktop from '$lib/speakers-desktop.svelte';
 	import SpeakersMobile from '$lib/speakers-mobile.svelte';
 	import TeamTile from '$lib/team-tile.svelte';
@@ -61,10 +62,22 @@
 	>
 </header>
 
-<main class="pt-11 inset reshape-gradient-bg">
-	<div class="inset-negative w-screen h-screen">
+<main class=" inset reshape-gradient-bg">
+	<div class="pt-11 inset-negative w-screen h-screen border-b-2 border-black">
 		<div class="absolute top-0 right-0 left-0 bottom-0"><Animation /></div>
-		<div class="inset">
+		<div class=" absolute top-0 right-0 left-0 bottom-0">
+			<div class="absolute left-0 bottom-0 right-0">
+				<div class="inset pb-[24px] flex items-end justify-between">
+					<div>
+						<span class="block md:text-[64px] md:leading-[4rem]"
+							>10.-<br />
+							12.5.23</span
+						>
+						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
+					</div>
+					<LabLogo />
+				</div>
+			</div>
 			<div class="grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2">
 				<div class="hidden md:col-span-1" />
 				<h1 class="z-20 reshape-title">reshape</h1>
@@ -73,7 +86,6 @@
 				<div class="col-span-1 md:col-span-3" />
 				<h2 class="z-20 reshape-subtitle">
 					Forum for<br />Artificial Intelligence<br />in Art and Design
-					<br /><br />10-12 May 2023 <br />HfG Schwäbisch-Gmünd
 				</h2>
 			</div>
 		</div>
@@ -81,7 +93,7 @@
 
 	<section class="first-section">
 		<p
-			class="mb-[80px] md:mb-[120px] reshape-lead-medium md:reshape-desktop-lead-medium max-w-[1200px]"
+			class="mt-[80px] md:mt-[134px] mb-[80px] md:mb-[120px] reshape-lead-medium md:reshape-desktop-lead-medium max-w-[1200px]"
 		>
 			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
 		</p>
