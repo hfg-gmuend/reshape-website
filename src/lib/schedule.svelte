@@ -34,12 +34,14 @@
 						on:click={() => toggle(i)}
 					/>
 					{#if i === expandedIndex}
-						<div class="md:hidden mt-4"><p class="reshape-copy">{expandedDescription}</p></div>
+						<div class="md:hidden mt-4">
+							<p class="reshape-copy">{@html expandedDescription}</p>
+						</div>
 					{/if}
 				</li>
 			{/each}
 		</ul>
-		<div><p class="reshape-copy max-md:hidden">{expandedDescription}</p></div>
+		<div><p class="reshape-copy max-md:hidden">{@html expandedDescription}</p></div>
 	</div>
 </article>
 
