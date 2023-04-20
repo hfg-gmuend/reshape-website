@@ -301,7 +301,7 @@
 				<TeamTile name="Alexa Steinbrück" description="Researcher" file="alexa" />
 				<TeamTile name="Benedikt Groß" description="Project lead" file="bene" />
 				<TeamTile name="Hartmut Bohnacker" description="Project lead" file="hartmut" />
-				<TeamTile name="Chris Pietsch" description="Researcher" file="chris" />
+				<TeamTile name="Christopher Pietsch" description="Researcher" file="chris" />
 				<TeamTile name="Johannes Rothkegel" description="Student assistant" file="johannes" />
 			</div>
 		</div>
