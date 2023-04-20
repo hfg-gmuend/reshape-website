@@ -5,7 +5,7 @@
 	import logoAiD from '$lib/assets/logos/logo-ai-d.png';
 </script>
 
-<div class="h-20 grid grid-cols-3 gap-3 md:h-16 md:flex md:justify-evenly">
+<div class="grid grid-cols-3 gap-3 md:h-16 md:flex md:justify-evenly">
 	<img src={logoAiD} alt="AI+D Lab" class="logo" />
 	<img src={logoHfG} alt="HfG Schwäbisch-Gmünd" class="logo" />
 	<img src={logoBw} alt="Baden-Württemberg" class="logo" />
@@ -15,8 +15,8 @@
 <style>
 	.logo {
 		display: block;
-		height: 100%;
 		background-size: contain;
 		background-repeat: no-repeat;
+		max-height: 50px;
 	}
 </style>
