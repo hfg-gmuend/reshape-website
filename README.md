@@ -1,22 +1,15 @@
-# create-svelte
+# reshape - Forum for Artificial Intelligence in Art and Design
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the public website for the reshape symposium (aka KITeGG summer school) taking place 10-12 May 2023 at the HfG Schwäbisch Gmünd!
 
-## Creating a project
+https://reshapeforum.hfg-gmuend.de
+https://reshapeforum.de
 
-If you're seeing this, you've probably already done this step. Congrats!
+This website was built with Sveltekit and deployed with Vercel.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## How to run it locally
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install the dependencies with `npm install` (or `pnpm install` or `yarn`), then start the development server:
 
 ```bash
 npm run dev
@@ -34,5 +27,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
