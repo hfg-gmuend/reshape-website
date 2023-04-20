@@ -7,7 +7,7 @@ https://reshapeforum.de
 
 This website was built with Sveltekit and deployed with Vercel.
 
-## How to run it locally
+## How to run this website locally
 
 Install the dependencies with `npm install` (or `pnpm install` or `yarn`), then start the development server:
 
@@ -18,7 +18,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## How to create a production version (build)
 
 To create a production version of your app:
 
