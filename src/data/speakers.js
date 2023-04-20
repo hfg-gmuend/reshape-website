@@ -50,5 +50,10 @@ export default [
 		description: `Andreas Refsgaard is an artist and creative coder based in Copenhagen. Working in the field between art and interaction design he uses algorithms, coding and machine learning to explore the creative potentials of emerging digital technologies.
 		His works have been published in New Scientist, Vice, Gizmodo, PSFK and Designboom, awarded by Interaction Awards and Core77 and exhibited in museums and at festivals in Europe, North America, Asia and Australia.`,
 		image: 'andreas-refsgaard'
+	},
+	{
+		name: 'Team Prompt Battle',
+		description: `Prompt Battle Delegation: Bernadette Geiger & Ella Zickerick <br/><br/> Prompt Battle is a live event where people compete against each other using text-to-image software. Show off your prompt skills and maybe the audience will choose you as the winner who elicited the most surprising, disturbing or beautiful images from the latent spaces of DALL·E 2, Stable Diffusion, Midjourney, Craiyon, etc. <br/><br/>The Prompt Battle format was developed by Florian A. Schmidt & Sebastian Schmieg with the design students at HTW Dresden: Bernadette Geiger, Ella Zickerick, Emily Krause, Levi Stein, Lina Schwarzenberg, Robert Hellwig`,
+		image: 'prompt-battle'
 	}
 ];

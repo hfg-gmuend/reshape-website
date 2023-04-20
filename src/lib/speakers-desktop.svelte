@@ -52,7 +52,7 @@
 		{/each}
 		<div class="col-span-full md:-my-[65px]" class:hidden={!isPartOfRow(expandedIndex, rowIndex)}>
 			<p class="reshape-copy mb-8 md:mt-[25px]">
-				{expandedDescription}
+				{@html expandedDescription}
 			</p>
 		</div>
 	{/each}

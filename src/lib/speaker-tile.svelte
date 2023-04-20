@@ -81,6 +81,10 @@
 		background-size: cover;
 	}
 
+	.speaker-prompt-battle {
+		background-image: url($lib/assets/speaker-portraits/prompt-battle.jpg);
+	}
+
 	.speaker-image:hover {
 		background-blend-mode: normal;
 		border-color: inherit;
