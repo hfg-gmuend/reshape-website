@@ -181,11 +181,9 @@
 				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
 				target="_blank"
 				rel="noopener noreferrer"
-				>Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung <div
-					class=""
+				>Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung <span
+					class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span
 				>
-					&nbsp;
-				</div>
 			</a>
 		</p>
 	</section>
@@ -414,5 +412,14 @@
 
 	.animation-fallback-gif {
 		background-image: url('$lib/assets/animation-20fps-noloop.gif');
+	}
+
+	.big-link {
+		display: inline-block;
+		height: auto;
+		background-image: url('$lib/assets/arrow-big.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
 	}
 </style>
