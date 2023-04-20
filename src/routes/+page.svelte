@@ -105,6 +105,8 @@
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div />
 			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0 border-black">
+				This is the third summer school organized by KITeGG, a 4-year research project of five
+				German universities on Artificial Intelligence in Art and Design that started in 2021.
 				Featuring a lineup of thought-provoking talks, engaging panel discussions, and hands-on
 				workshops, we will explore how AI can expand art and design practices and enhance
 				creativity, learn about the challenges and affordances of designing AI-based interfaces and
@@ -112,12 +114,39 @@
 				and in-depth exploration of the many-sided world of creative AI.
 			</p>
 			<p class="reshape-copy max-md:inset-left">
-				In anregenden Vorträgen, spannenden Podiumsdiskussionen und praxisbezogenen Workshops
-				erkunden wir, wie KI einerseits Kunst- und Designpraktiken erweitern und Kreativität fördern
-				kann, und erörtern andererseits, die Herausforderungen und Möglichkeiten, die bei der
-				Gestaltung von KI-basierten Schnittstellen und Produkten eine Rolle spielen. Zudem ist es
-				ein Anliegen der Konferenz darüber zu sprechen, wie KI-Skills in die Ausbildung von
-				Designer_innen und Künstler_innen integriert werden können.
+				Wow, what has happened in the last 12 months? We are experiencing a new wave of AI hype, and
+				generative AI is at the heart of it. The success of tools like ChatGPT, Stable Diffusion or
+				DALL-E, which are usable for everyone, have contributed to the fact that the topic of “AI
+				and creativity” is now mainstream and widely discussed. New products and business models
+				based on the technology of large language models (LLMs) are spawning everywhere. Signs of
+				generative AI becoming a maturing technology.
+			</p>
+			<div />
+			<p class="reshape-copy max-md:inset-left">
+				In the midst of this new "AI summer", the 3rd KITeGG summer school is taking place! Where do
+				the KITeGG community and its five AI labs conceptually position themselves in 2023? What is
+				different in this wave of AI hype than in the waves before? This symposium gathers a diverse
+				group of experts to discuss exciting and finicky questions emerging when AI meets design and
+				art along 3 axes:
+			</p>
+
+			<p class="reshape-copy max-md:inset-left">
+				<span class="font-[500]">1. Design for AI (Designing AI systems) </span><br /> What are the
+				challenges and affordances for designing AI-based interfaces and products? What do designers
+				need to know to design these systems responsibly? What is the broader societal context of
+				these technologies, underlying practices and economies?
+				<br /><br />
+
+				<span class="font-[500]">2. AI for Design (Creative AI)</span><br /> How can AI augment art
+				and design practices? How do AI technologies integrate as tools in the creative toolbox of
+				artists and designers? How can AI act as a tool for ideation, enhancing rather than
+				flattening creativity?
+				<br /><br />
+
+				<span class="font-[500]">3. Teaching AI to creatives</span><br /> Approaches and best practices
+				for teaching AI to creatives. How to increase AI and data literacy? How do we help build up intuitions
+				for AI use cases, consciously assess the benefits and risks and decide when to use or not use
+				AI-based technologies?
 			</p>
 		</div>
 	</section>
