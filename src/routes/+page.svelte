@@ -105,15 +105,15 @@
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div />
 			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0 border-black">
-				This is the third summer school organized by KITeGG, a 4-year research project of five
-				German universities on Artificial Intelligence in Art and Design that started in 2021.
-				Featuring a lineup of thought-provoking talks, engaging panel discussions, and hands-on
-				workshops, we will explore how AI can expand art and design practices and enhance
-				creativity, learn about the challenges and affordances of designing AI-based interfaces and
-				products, and discover best practices for teaching AI to creatives. Join us for a refreshing
-				and in-depth exploration of the many-sided world of creative AI.
+				This is the third summer school organized by KITeGG, a research project of five German
+				universities on Artificial Intelligence in Art and Design running from 2021-2025. Featuring
+				a lineup of thought-provoking talks, engaging panel discussions, and hands-on workshops, we
+				will explore how AI can expand art and design practices and enhance creativity, learn about
+				the challenges and affordances of designing AI-based interfaces and products, and discover
+				best practices for teaching AI to creatives. Join us for a refreshing and in-depth
+				exploration of the many-sided world of creative AI.
 			</p>
-			<p class="reshape-copy max-md:inset-left">
+			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0">
 				Wow, what has happened in the last 12 months? We are experiencing a new wave of AI hype, and
 				generative AI is at the heart of it. The success of tools like ChatGPT, Stable Diffusion or
 				DALL-E, which are usable for everyone, have contributed to the fact that the topic of “AI
@@ -122,7 +122,7 @@
 				generative AI becoming a maturing technology.
 			</p>
 			<div />
-			<p class="reshape-copy max-md:inset-left">
+			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0">
 				In the midst of this new "AI summer", the 3rd KITeGG summer school is taking place! Where do
 				the KITeGG community and its five AI labs conceptually position themselves in 2023? What is
 				different in this wave of AI hype than in the waves before? This symposium gathers a diverse
@@ -130,7 +130,7 @@
 				art along 3 axes:
 			</p>
 
-			<p class="reshape-copy max-md:inset-left">
+			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0">
 				<span class="font-[500]">1. Design for AI (Designing AI systems) </span><br /> What are the
 				challenges and affordances for designing AI-based interfaces and products? What do designers
 				need to know to design these systems responsibly? What is the broader societal context of
