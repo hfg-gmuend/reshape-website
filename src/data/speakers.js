@@ -41,8 +41,7 @@ export default [
 	},
 	{
 		name: 'Tom White',
-		description: `Tom White is a New Zealand based artist investigating artificial intelligence and machine perception. He is also a lecturer teaching computational design and creative AI at the Victoria University of Wellington School of Design. His artwork investigates the Algorithmic Gaze: how machines see, know, and articulate the world. As machine perception becomes more pervasive in our daily lives, the world as seen by computers becomes our dominant reality. White explores this phenomenon in his work. Collaborating with AI systems, White creates physical abstract prints that are reliably classified by neural networks. It’s art by AI, for AI. By giving the algorithms a voice to speak in, we are better able to see the world through the eyes of a machine.
-		`,
+		description: `Tom White (dribnet) is a New Zealand based artist investigating machine perception. His current work focuses on creating physical artworks that highlight how machines “see” and thus how they think, suggesting that these systems are capable of abstraction and conceptual thinking. He has exhibited computer based artwork internationally over the past 25 years with themes of artificial intelligence, interactivity, and computational creativity. He is currently a lecturer and researcher at University of Wellington School of Design where he teaches students the creative potential of computer programming and artificial intelligence.`,
 		image: 'tom-white'
 	},
 	{

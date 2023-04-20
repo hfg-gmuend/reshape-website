@@ -8,7 +8,7 @@ export default [
 	{
 		timeslot: '10:30-11:30',
 		title: 'Tom White',
-		subtitle: 'Talk (tbd)',
+		subtitle: 'Machine Abstractions',
 		description: `tbd`
 	},
 	{
