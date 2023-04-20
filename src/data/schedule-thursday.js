@@ -37,7 +37,7 @@ export default [
 	{
 		timeslot: '17:00-17:45',
 		title: 'Bjørn Karmann (oio)',
-		subtitle: 'Talk (tbd)',
+		subtitle: 'Intelligence as a material',
 		description: `tbd`
 	}
 ];

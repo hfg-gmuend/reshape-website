@@ -45,19 +45,6 @@ export default [
 	{
 		timeslot: 'Designing Prompts',
 		title: 'Benedikt Groß (HfG Schwäbisch-Gmünd)',
-		description: `Prompting is a powerful method for generating images using AI image generators. By providing a textual description of an image, a prompt can guide the generator to create a visual representation of that description. However, crafting an effective prompt requires understanding the capabilities and limitations of these generators and even more important, the nuances of language that can impact how the generator interprets the prompt. In this course, we will explore how to create prompts for AI image generators, and how to use them to generate imaginative and compelling visuals. To get started, we will be working on a short project called "The Illustrated Thing from the Future", where you will create a prompt that describes an imaginary object or concept from the future, and use an AI image generator to bring it to life.
-            Course content:
-            - How do AI image generators / AI text-to-image systems work (roughly)?
-            - How are prompts designed / how are prompts structured?
-            - How to find the needle (desired image) in the haystack (latent space)?
-            - What AI image generator tools are available?
-            - Which models are suitable for which application?
-            - Outlook: How can own models be trained?
-            - Outlook: What other possibilities are there?
-            - Perspective: What do these systems mean for us as designers?
-            - Perspective: Art direction. How to deal with the flood of images?
-            - Perspective: ethical considerations and legal problems of these systems.
-            Students learn the potential of AI image generators with tangible examples. Students learn "prompting" as a method and can translate their design ideas into prompts. Students will be able to apply AI text-to-image systems to their design projects in the future.
-            `
+		description: `Prompting is a powerful method for generating images using AI image generators. By providing a textual description of an image, a prompt can guide the generator to create a visual representation of that description. However, crafting an effective prompt requires understanding the capabilities and limitations of these generators and even more important, the nuances of language that can impact how the generator interprets the prompt. In this course, we will explore how to create prompts for AI image generators, and how to use them to generate imaginative and compelling visuals. To get started, we will be working on a short project called "The Illustrated Thing from the Future", where you will create a prompt that describes an imaginary object or concept from the future, and use an AI image generator to bring it to life.`
 	}
 ];

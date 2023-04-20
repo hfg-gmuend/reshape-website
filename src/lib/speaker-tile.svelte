@@ -76,6 +76,11 @@
 		background-image: url($lib/assets/speaker-portraits/tom-white.jpg);
 	}
 
+	.speaker-wolfgang-ertel {
+		background-image: url($lib/assets/speaker-portraits/wolfgang-ertel.jpg);
+		background-size: cover;
+	}
+
 	.speaker-image:hover {
 		background-blend-mode: normal;
 		border-color: inherit;
