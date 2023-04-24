@@ -168,7 +168,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="program" class="mt-[250px]">
+	<section id="program" class="pt-[250px]">
 		<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
 			Public programme
 		</h2>
@@ -241,13 +241,13 @@
 			</h3>
 		</Schedule>
 	</section>
-	<section>
+	<section id="kitegg">
 		<div class="inset-negative"><div class="seperator" /></div>
 		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[165px] md:mt-[250px]">
 			KITeGG - A collaborative project of five universities for the integration of AI in the design
 			teaching.
 		</p>
-		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[120px]" id="kitegg">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[120px]">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
 				KITeGG
 			</h2>
@@ -270,7 +270,7 @@
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]" id="ai-d-lab">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[250px]" id="ai-d-lab">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
 				AI+D Lab
 			</h2>
@@ -284,7 +284,7 @@
 				applications and how do they need to be prepared for this in their education and how can we
 				design desirable futures with AI technologies?
 			</p>
-			<p class="reshape-copy max-md:inset-left">
+			<p class="reshape-copy max-md:inset-left mt-[25px] md:mt-0">
 				In order to be able to use AI technologies in the design process, it is important to build
 				up sound knowledge about the possibilities and limitations of this technology. As a physical
 				location, the Lab is the first point of contact for students and teachers and provides the
