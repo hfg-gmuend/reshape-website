@@ -105,11 +105,7 @@
 </script>
 
 <div class="carousel">
-	<div class="slides" bind:this={el}>
-		<slot />
-	</div>
-
-	<div class="controls mt-36">
+	<div class="controls">
 		<button class="" on:click={left} use:resetInterval={autoplay} aria-label="left">
 			<ArrowRightIcon style="transform: rotate(180deg)" />
 		</button>
@@ -117,6 +113,9 @@
 		<button class="ml-auto" on:click={right} use:resetInterval={autoplay} aria-label="right">
 			<ArrowRightIcon />
 		</button>
+	</div>
+	<div class="slides mt-[55px]" bind:this={el}>
+		<slot />
 	</div>
 </div>
 
@@ -129,7 +128,6 @@
 	}
 
 	.controls {
-		position: absolute;
 		top: 0;
 		width: 100%;
 		z-index: 20;

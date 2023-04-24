@@ -166,7 +166,7 @@
 			</h2>
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
-				<div class="overflow-hidden inset-negative md:hidden">
+				<div class="overflow-hidden inset-negative md:hidden max-md:-mt-[55px]">
 					<SpeakersMobile />
 				</div>
 				<!-- DESKTOP -->
@@ -212,15 +212,16 @@
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
 		<p
-			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[1200px]"
+			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[900px]"
 		>
 			<a
 				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
 				target="_blank"
 				rel="noopener noreferrer"
-				>The public program is open to all and free of charge. Please register here <span
-					class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span
+				>The public program is open to all and free of charge. Please <span class="text-[#6262FF]"
+					>register here</span
 				>
+				<span class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span>
 			</a>
 		</p>
 	</section>
@@ -251,13 +252,18 @@
 	</section>
 	<section id="kitegg">
 		<div class="inset-negative"><div class="seperator" /></div>
-		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[165px] md:mt-[250px]">
+
+		<p
+			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[165px] md:mt-[250px] max-w-[920px]"
+		>
 			KITeGG - A collaborative project of five universities for the integration of AI in the design
 			teaching.
 		</p>
 		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[120px]">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
-				KITeGG
+				<a href="https://gestaltung.ai" target="_blank" rel="noopener noreferrer"
+					>KITeGG <span class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span></a
+				>
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
 				The joint project "KITeGG - Making AI tangible and comprehensible: Connecting technology and
