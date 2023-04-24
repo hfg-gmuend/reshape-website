@@ -13,7 +13,7 @@
 	import Logos from '$lib/logos.svelte';
 	import Schedule from '$lib/schedule.svelte';
 	// import AnimationMovieMP4 from '$lib/assets/reshape_8_1.mp4';
-	
+
 	let menuOpen = false;
 
 	function scrollIntoView({ target }) {
@@ -76,7 +76,7 @@
 		<!-- Desktop Animation -->
 		<div class="absolute top-0 right-0 left-0 bottom-0 max-md:hidden"><Animation /></div>
 		<!-- End of Desktop Animation -->
-		<div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden" >
+		<div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden">
 			<!-- <video autoplay="true" loop="true" contols>
 				<track kind="captions">
 				<source src={AnimationMovieMP4} type="video/mp4" />
@@ -404,7 +404,7 @@
 		<button
 			class="md:hidden reshape-copy flex-grow"
 			on:click={() => {
-				document.body.scrollIntoView();
+				document.body.scrollIntoView({ behavior: 'smooth' });
 			}}
 			>Back to top <svg
 				style:display="inline"

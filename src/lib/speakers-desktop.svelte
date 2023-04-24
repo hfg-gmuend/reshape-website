@@ -46,6 +46,7 @@
 				<SpeakerTile
 					tint={idx(rowIndex, colIndex) !== expandedIndex && 'reshape-lila'}
 					name={item.name}
+					subtitle={item.subtitle}
 					imageName={item.image}
 				/>
 			</div>

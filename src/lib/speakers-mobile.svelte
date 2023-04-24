@@ -11,6 +11,7 @@
 				<SpeakerTile
 					tint="reshape-lila"
 					name={speaker.name}
+					subtitle={speaker.subtitle}
 					description={speaker.description}
 					imageName={speaker.image}
 				/>
