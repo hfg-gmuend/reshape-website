@@ -20,8 +20,8 @@
 	}
 
 	const menuItems = [
-		{ title: 'Programm', link: 'program' },
-		{ title: 'Anmeldung', link: 'anmeldung' },
+		{ title: 'Programme', link: 'program' },
+		{ title: 'Registration', link: 'anmeldung' },
 		{ title: 'AI+D Lab', link: 'ai-d-lab' },
 		{ title: 'KITeGG', link: 'kitegg' }
 	];
@@ -154,7 +154,7 @@
 	<section class="mt-[120px] md:mt-[250px]">
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-0">
-				Speaker&#8203;:innen
+				Speakers
 			</h2>
 			<div class="col-span-2">
 				<!-- MOBILE (carousel) -->
@@ -170,10 +170,10 @@
 	</section>
 	<section id="program" class="mt-[250px]">
 		<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
-			Öffentliches Programm
+			Public programme
 		</h2>
 		<p class="mb-[55px] md:mb-[65px] reshape-lead-light">
-			10. Mai 2022 – 12. Mai 2023 <br /> (Mittwoch bis Freitag)
+			May 10-12, 2023 <br /> (Wednesday - Friday)
 		</p>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila" bgMotive="wed">
@@ -181,7 +181,7 @@
 				slot="heading"
 				class="reshape-subsection-header text-reshape-lila basis-1/2 mb-[55px] md:mb-0"
 			>
-				Mittwoch<br />10.&nbsp;Mai
+				Wednesday<br />10.&nbsp;Mai
 			</h3>
 		</Schedule>
 		<div class="inset-negative"><div class="seperator" /></div>
@@ -210,7 +210,7 @@
 				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
 				target="_blank"
 				rel="noopener noreferrer"
-				>Das öffentliche Programm ist kostenfrei für alle zugänglich. Hier geht es zur Anmeldung <span
+				>The public program is open to all and free of charge. Please register here <span
 					class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span
 				>
 			</a>
@@ -220,16 +220,16 @@
 		<div class="md:grid md:grid-cols-3 gap-10 md:mb-[55px]">
 			<div class="col-span-2">
 				<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
-					Internes Programm
+					Internal program
 				</h2>
 				<p class="reshape-copy md:reshape-lead-light">
-					8. Mai 2022 – 10. Mai 2022 <br />(Montag bis Mittwoch)
+					Mai 8-10, 2023 <br />(Monday - Wednesday)
 				</p>
 			</div>
 			<p class="reshape-copy inset-left mt-[25px] mb-[55px] md:mt-0 md:mb-0">
-				Lehrende der KITeGG Partnerhochschulen bieten in den Tagen vor der Konferenz eine Reihe von
-				Workshops, die ein praktisches Erproben der Bandbreite an Möglichkeiten geben, die KI und
-				Machine Learning für Gestalter:innen bereit halten.
+				Educators from KITeGG partner universities will offer a series of workshops in the days
+				leading up to the conference, providing a hands-on experience of the range of possibilities
+				that AI and machine learning hold for designers.
 			</p>
 		</div>
 
@@ -244,22 +244,28 @@
 	<section>
 		<div class="inset-negative"><div class="seperator" /></div>
 		<p class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[165px] md:mt-[250px]">
-			KITeGG - Ein Verbundprojekt von fünf Hochschulen zur Integration von KI in der
-			Gestaltungslehre.
+			KITeGG - A collaborative project of five universities for the integration of AI in the design
+			teaching.
 		</p>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[120px]" id="kitegg">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
 				KITeGG
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
-				Das Verbundvorhaben „KITeGG - KI greifbar machen und begreifen: Technologie und Gesellschaft
-				verbinden durch Gestaltung“ erforscht wie KI in die Gestaltungslehre integriert werden kann.
+				The joint project "KITeGG - Making AI tangible and comprehensible: Connecting technology and
+				society through design" explores how AI can be integrated into design education. Project
+				partners are the Mainz University of Applied Sciences, the Offenbach University of Art and
+				Design, the Schwäbisch Gmünd University of Applied Design, the Cologne International School
+				of Design and the Trier University of Applied Sciences.
 			</p>
 			<p class="reshape-copy max-md:inset-left mt-[25px] md:mt-0">
-				In dem BMBF-geförderten Verbundprojekt KITeGG arbeiten und forschen bis Ende 2025 insgesamt
-				fünf Hochschulen an der Integration von KI in der Gestaltungslehre: Die Hochschule Mainz,
-				die Hochschule für Gestaltung Offenbach, die Hochschule für Gestaltung Schwäbisch Gmünd, die
-				Köln International School of Design und die Hochschule Trier.
+				As “designers of the future” students should have knowledge of current and future relevant
+				technologies as well as profound technical knowledge and the ability to systematically
+				consider user contexts and ethical and legal issues. They should be able to use machine
+				learning reflectively as a tool and material for design. To this end, new teaching formats,
+				tools, symposia and publications are to be developed within the framework of the project
+				over the next four years. KITeGG is one of over 50 funded projects within the framework of
+				the funding initiative "Künstliche Intelligenz in der Hochschulbildung".
 			</p>
 		</div>
 	</section>
@@ -269,22 +275,23 @@
 				AI+D Lab
 			</h2>
 			<p class="reshape-copy max-md:inset-left">
-				Das AI+D Lab ist der Ort an der HfG Schwäbisch Gmünd für Forschung und Lehre, die Künstliche
-				Intelligenz und Design verbindet. In Form generierter Bilder und Videos, intelligenter
-				Sensorsysteme und sprachbasierten Interfaces wird Machine Learning in der Designpraxis immer
-				mehr zum Einsatz kommen. Wir beschäftigen uns mit den Möglichkeiten und Herausforderungen
-				künstlicher Intelligenz in der Gestaltung: Wie können KI-Technologien in den
-				Gestaltungsprozess eingebunden werden und wie verändert sich dadurch die Arbeit von
-				Gestalter*Innen? Welche Rolle können Designer*Innen in der (Mit-)Gestaltung von KI-basierten
-				Anwendungen einnehmen und wie müssen sie in der Ausbildung darauf vorbereitet werden und wie
-				können wir wünschenswerte Zukünfte mit KI-Technologien gestalten? Um KI-Technologien im
-				Gestaltungsprozess einsetzen zu können, ist es wichtig, fundierte Kenntnisse über die
-				Möglichkeiten und Grenzen dieser Technologie aufzubauen. Das Lab ist als physischer Ort die
-				erste Anlaufstelle für Studierende und Lehrende und stellt die technische Infrastruktur für
-				Projekte und Experimente mit unterschiedlichen KI-Modellen und Technologien zur Verfügung.
-				Das AI+D Lab ist Teil des Verbundprojektes KITeGG – KI greifbar machen und begreifen
+				The AI+D Lab is the place at HfG Schwäbisch Gmünd for research and teaching that combines
+				artificial intelligence and design. In the form of generated images and videos, intelligent
+				sensor systems and language-based interfaces, Machine Learning will be increasingly used in
+				design practice. We will explore the possibilities and challenges of artificial intelligence
+				in design: How can AI technologies be integrated into the design process and how does this
+				change the work of designers? What role can designers play in the (co-)design of AI-based
+				applications and how do they need to be prepared for this in their education and how can we
+				design desirable futures with AI technologies?
 			</p>
-			<p class="reshape-copy max-md:inset-left" />
+			<p class="reshape-copy max-md:inset-left">
+				In order to be able to use AI technologies in the design process, it is important to build
+				up sound knowledge about the possibilities and limitations of this technology. As a physical
+				location, the Lab is the first point of contact for students and teachers and provides the
+				technical infrastructure for projects and experiments with different AI models and
+				technologies. The AI+D Lab is part of the joint project KITeGG - Making and Understanding AI
+				Tangible
+			</p>
 		</div>
 	</section>
 	<section>
@@ -313,14 +320,17 @@
 			</h2>
 			<div class="max-md:inset-left col-span-2 mt-[55px] md:mt-[25px]">
 				<p class="reshape-copy">
-					<span class="font-medium">Programm</span><br />Alexa Steinbrück
+					<span class="font-medium">Programme & Coordination</span><br />Alexa Steinbrück
 				</p>
 				<p class="reshape-copy mt-[25px] md:mt-[25px]">
-					<span class="font-medium">Grafikdesign</span><br />Lucie Paula Claire de Hair, Marlene
+					<span class="font-medium">Graphic design</span><br />Lucie Paula Claire de Hair, Marlene
 					Metschies, Kirsten Humpfer
 				</p>
 				<p class="reshape-copy mt-[25px] md:mt-[25px]">
-					<span class="font-medium">Website</span><br />Alexa Steinbrück
+					<span class="font-medium">Website development</span><br />Alexa Steinbrück
+				</p>
+				<p class="reshape-copy mt-[25px] md:mt-[25px]">
+					<span class="font-medium">Animation</span><br />Hartmut Bohnacker
 				</p>
 			</div>
 		</div>
@@ -365,10 +375,10 @@
 	<footer class="flex gap-2 p-2 md:p-8 inset-negative border-black border-t-2 md:justify-around">
 		<div class="flex flex-col md:flex-row gap-2 md:gap-4">
 			<a href="https://www.hfg-gmuend.de/datenschutz" target="_blank" rel="noopener noreferrer"
-				>Datenschutzerklärung</a
+				>Privacy policy</a
 			>
 			<a href="https://www.hfg-gmuend.de/impressum" target="_blank" rel="noopener noreferrer"
-				>Impressum</a
+				>Imprint</a
 			>
 		</div>
 		<button

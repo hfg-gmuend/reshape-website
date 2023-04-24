@@ -15,11 +15,11 @@ export default [
 		timeslot: '12:00-13:00',
 		title: 'Panel',
 		subtitle: 'KITeGG: Learnings from one year of AI education at Art & Design Schools',
-		description: `Das Verbundprojekt KITegg hat die Mission, zu erforschen wie KI und ML in die Gestaltungslehre integriert werden können. Seit mehr als einem Jahr haben die 5 beteiligten Hochschulen nun konkrete Erfahrungen gesammelt. Was können die Mitarbeitenden berichten: Welche Formate haben gut funktioniert und welche weniger gut? Wie priorisiert man innerhalb eines Themas was technologisch komplex ist? Welche Übersetzungen und Vereinfachungen sind nötig? Wie fördert man den nötigen "Rigour" und eine gesunde kritische Haltung angesichts eines Themas was medial überpräsent und oft verzerrt dargestellt wird? Lassen sich Erfahrungen aus dem Bereich von anderen im Gestaltungskontext gelehrten Technologien z.B. Creative Coding auf die Lehre von KI übertragen?`
+		description: `The joint project KITegg has the mission to explore how AI and ML can be integrated into design teaching. For more than a year, the 5 participating universities have now gathered concrete experience. What can the collaborators report: Which formats have worked well and which have not? How do you prioritize within a technologically complex topic? What translations and simplifications are needed? How do you promote the necessary "rigour" and a healthy critical attitude in the face of a topic that is overrepresented and often distorted in the media? Can experiences from other technologies taught in the design context, e.g. creative coding, be transferred to the teaching of AI?`
 	},
 	{
 		timeslot: '13:00-14:00',
-		title: 'Präsentation der Workshop Ergebnisse',
+		title: 'Pizza & presentation of workshop results',
 		subtitle: '',
 		description: `Casual presentation of results and learnings throughout the workshops during the beginning of the week`
 	}

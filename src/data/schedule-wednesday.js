@@ -1,12 +1,12 @@
 export default [
 	{
 		timeslot: '15:00-16:00',
-		title: 'Welcome',
+		title: 'Welcome!',
 		subtitle: ''
 	},
 	{
 		timeslot: '16:00-17:00',
-		title: 'Führung durch die HfG',
+		title: 'Guided tour through the HfG',
 		subtitle: ''
 	},
 	{
