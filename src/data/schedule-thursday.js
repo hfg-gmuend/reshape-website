@@ -11,7 +11,7 @@ export default [
 		timeslot: '10:30-11:30',
 		title: 'Catherine Breslin',
 		subtitle: 'Conversational Design for Voice Assistants',
-		description: `Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She is excited by the application of research to real-world problems involving speech and language at scale.`
+		description: `With the rise of voice interfaces, it's clear that conversation design is a big part of building a successful interface. This talk will cover how people converse, how that inspires the current voice assistant technology, and how LLMs or other developments might change voice assistants in the future.`
 	},
 	{
 		timeslot: '12:00-13:00',
@@ -27,8 +27,8 @@ export default [
 	{
 		timeslot: '14:00-15:00',
 		title: 'Emily Saltz',
-		subtitle: 'Talk (tbd)',
-		description: `Emily Saltz is a UX Researcher at Google Jigsaw, working on tools for platforms and moderators to address online harms. Before that, she was a UX Researcher at the New York Times R&D Lab, conducting research on topics ranging from media credibility (the News Provenance Project), to NLP Q&A tools. She was a 2020 Fellow at the Partnership on AI studying manipulated and synthetic media, where she co-authored "The Responsible AI Art Field Guide." She holds a Master’s in Computer-Interaction from Carnegie Mellon, and a BA in Linguistics from UC Santa Cruz, and is Part-Time Faculty in Design & Technology at Parsons (NYC). `
+		subtitle: 'AI Safety & Disclosure in Product Design: Practices in Flux',
+		description: `In just a few months time as tools like DALL•E and ChatGPT went mainstream, safety considerations and UX best practices for using AI-generated image and text outputs went  from theoretical to urgent. I'll discuss my firsthand experience developing UX guidelines for labeling of manipulated and synthetic media, and reflect on the evolving considerations and adversarial "anti-personas" as the technology has become more accessible. I'll also discuss how designers and researchers might think about AI safety across the design process, from model training and prompt engineering to guardrails and disclosure for user-facing outputs.`
 	},
 	{
 		timeslot: '15:00-16:30',

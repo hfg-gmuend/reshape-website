@@ -23,7 +23,7 @@ export default [
 	},
 	{
 		name: 'Catherine Breslin',
-		description: `Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She is excited by the application of research to real-world problems involving speech and language at scale.`,
+		description: `Dr Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She's excited by the application of research to real-world problems involving speech and language at scale.`,
 		image: 'catherine-breslin'
 	},
 
@@ -35,7 +35,7 @@ export default [
 
 	{
 		name: 'Emily Saltz',
-		description: `Emily Saltz is a UX Researcher at Google Jigsaw, working on tools for platforms and moderators to address online harms. Before that, she was a UX Researcher at the New York Times R&D Lab, conducting research on topics ranging from media credibility (the News Provenance Project), to NLP Q&A tools. She was a 2020 Fellow at the Partnership on AI studying manipulated and synthetic media, where she co-authored "The Responsible AI Art Field Guide." She holds a Master’s in Computer-Interaction from Carnegie Mellon, and a BA in Linguistics from UC Santa Cruz, and is Part-Time Faculty in Design & Technology at Parsons (NYC). `,
+		description: `Emily Saltz is a UX Researcher at Google Jigsaw, working on tools for platforms and moderators to address online harms. Before that, she was a UX Researcher at the New York Times R&D Lab, conducting research on topics ranging from media credibility (the News Provenance Project), to NLP Q&A tools. She was a 2020 Fellow at the Partnership on AI studying manipulated and synthetic media, where she co-authored "The Responsible AI Art Field Guide." She holds a Master’s in Computer-Interaction from Carnegie Mellon, and a BA in Linguistics from UC Santa Cruz, and is Part-Time Faculty in Design & Technology at Parsons.`,
 		image: 'emily-saltz'
 	},
 	{
