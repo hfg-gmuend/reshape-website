@@ -21,7 +21,7 @@
 	<h3 class="mt-[25px] md:mt-[15px] block reshape-lead-light">{name}</h3>
 	<h4 class="reshape-copy">{subtitle}</h4>
 	<p class="reshape-copy mt-4 md:mt-0 max-md:max-w-[70vw]">
-		{description}
+		{@html description}
 	</p>
 </div>
 
