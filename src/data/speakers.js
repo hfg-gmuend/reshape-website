@@ -2,9 +2,7 @@ export default [
 	{
 		name: 'Nadia Piet',
 		subtitle: 'AIxDESIGN',
-		description: `Nadia Piet is a designer /researcher / creative with a focus on AI/ML, data, tech, (digital) culture and creativity.
-		She is the founder of AIxDESIGN, Head of Creative Technology at DEPT Agency, holds an MA in Data-Driven Design, and continues to explore through freelance and self-initiated projects & play. Her work questions how we design, interact, and relate to technology.
-		Previously, she worked as a design researcher for emerging tech with Bit, facilitated workshops to demystify digital with DECODED, published the AI meets Design toolkit in collaboration with MOBGEN | Fjord | Accenture Interactive, freelanced for 8+ years, and had the opportunity to live & work out of 10 countries across the globe.`,
+		description: `Nadia Piet is an independent designer, researcher, organizer, and educator with a focus on AI/ML, data, tech, [digital] culture and creativity. She’s the founder of AIxDESIGN [a community of practitioners & living lab for beyond-corporate AI], holds an MA in Data-Driven Design, and explores playful & purposeful tech through freelance projects and self-initiated experiments. Over the past 10 years, she’s worked as Head of Creative Technology at DEPT [a global digital agency], design researcher for emerging technologies at Bit, and across roles and continents with organizations such as Hyper Island, Pi Campus, Forbes, UN, AWWWARDS, DECODED, MOBGEN | Accenture Interactive, Mozilla, and ICO.`,
 		image: 'nadia-piet'
 	},
 	{

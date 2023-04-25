@@ -2,10 +2,8 @@ export default [
 	{
 		timeslot: '09:30-10:30',
 		title: 'Nadia Piet',
-		subtitle: 'Talk (tbd)',
-		description: `Nadia Piet is a designer /researcher / creative with a focus on AI/ML, data, tech, (digital) culture and creativity.
-		She is the founder of AIxDESIGN, Head of Creative Technology at DEPT Agency, holds an MA in Data-Driven Design, and continues to explore through freelance and self-initiated projects & play. Her work questions how we design, interact, and relate to technology.
-		Previously, she worked as a design researcher for emerging tech with Bit, facilitated workshops to demystify digital with DECODED, published the AI meets Design toolkit in collaboration with MOBGEN | Fjord | Accenture Interactive, freelanced for 8+ years, and had the opportunity to live & work out of 10 countries across the globe.`
+		subtitle: 'UX of AI',
+		description: `Designing AI/ML-driven applications is different from designing event posters or more static mobile apps. Designing the user experience of adaptive, intelligent, and semi-autonomous systems present a range of new challenges for us designers to take on. This talk introduces you to exactly that - ranging from interactions around explainability and user feedback mechanisms, to greater ethical challenges such as echo chambers and data bias 📈 We also look at UX as having great potential to shape algorithmic interactions for the better and close the gap between the abstract promises of ethical AI principles and people’s lived experience. If you're looking to deepen your understanding of design for AI and how design(ers) can shape the course of AI, this one is for you!`
 	},
 	{
 		timeslot: '10:30-11:30',
