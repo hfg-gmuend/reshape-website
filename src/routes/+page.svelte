@@ -482,7 +482,7 @@
 	}
 
 	.animation-fallback-gif {
-		background-image: url('$lib/assets/animation-20fps-noloop.gif');
+		background-image: url('$lib/assets/animation-20fps-loop.gif');
 	}
 
 	.big-link {
