@@ -338,7 +338,7 @@
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mt-[80px] md:mt-0">
 				Reshape Team
 			</h2>
-			<div class="max-md:inset-left col-span-2 mt-[55px] md:mt-[25px]">
+			<div class="max-md:inset-left mt-[55px] md:mt-0">
 				<p class="reshape-copy">
 					<span class="font-medium">Programme & Coordination</span><br />Alexa Steinbrück
 				</p>
@@ -352,6 +352,19 @@
 				<p class="reshape-copy mt-[25px] md:mt-[25px]">
 					<span class="font-medium">Animation</span><br />Hartmut Bohnacker
 				</p>
+			</div>
+			<div class="max-md:inset-left reshape-copy mt-[25px] md:mt-[25px]">
+				<span class="font-medium">Production</span>
+				<ul>
+					<li>Felix Sewing</li>
+					<li>Johannes Rothkegel</li>
+					<li>Rahel Flechtner</li>
+					<li>Aeneas Stankowski</li>
+					<li>Benedikt Groß</li>
+					<li>Christopher Pietsch</li>
+					<li>Katharina Neugart</li>
+					<li>Malte Fial</li>
+				</ul>
 			</div>
 		</div>
 	</section>
