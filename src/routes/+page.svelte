@@ -284,7 +284,7 @@
 				consider user contexts and ethical and legal issues. They should be able to use machine
 				learning reflectively as a tool and material for design. To this end, new teaching formats,
 				tools, symposia and publications are to be developed within the framework of the project
-				over the next four years. KITeGG is one of over 50 funded projects within the framework of
+				over the next three years. KITeGG is one of over 50 funded projects within the framework of
 				the funding initiative "Künstliche Intelligenz in der Hochschulbildung".
 			</p>
 		</div>
@@ -307,10 +307,9 @@
 			<p class="reshape-copy max-md:inset-left mt-[25px] md:mt-0">
 				In order to be able to use AI technologies in the design process, it is important to build
 				up sound knowledge about the possibilities and limitations of this technology. As a physical
-				location, the Lab is the first point of contact for students and teachers and provides the
+				location, the lab is the first point of contact for students and teachers and provides the
 				technical infrastructure for projects and experiments with different AI models and
-				technologies. The AI+D Lab is part of the joint project KITeGG - Making and Understanding AI
-				Tangible
+				technologies. The AI+D Lab is part of KITeGG.
 			</p>
 		</div>
 	</section>
