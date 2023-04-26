@@ -352,7 +352,7 @@
 					<span class="font-medium">Animation</span><br />Hartmut Bohnacker
 				</p>
 			</div>
-			<div class="max-md:inset-left reshape-copy mt-[25px] md:mt-[25px]">
+			<div class="max-md:inset-left reshape-copy mt-[25px] md:mt-0">
 				<span class="font-medium">Production</span>
 				<ul>
 					<li>Felix Sewing</li>
