@@ -12,7 +12,7 @@ export default [
 	},
 	{
 		timeslot: 'Making (Non)Sense – Prototyping AI based Interactive Systems with Sensors',
-		title: 'Rahel Flechtner (HfG Schwäbisch-Gmünd) & Jakob Kilian (KISD)',
+		title: 'Rahel Flechtner (HfG Schwäbisch Gmünd) & Jakob Kilian (KISD)',
 		description: `In this workshop, we will explore the possibilities of sensor data and gain a deeper understanding
         of how it can be used to create interactive AI based systems.
         In the first part of the workshop, we'll be acting out AI systems in an interactive and playful
@@ -44,7 +44,7 @@ export default [
 	},
 	{
 		timeslot: 'Designing Prompts',
-		title: 'Benedikt Groß (HfG Schwäbisch-Gmünd)',
+		title: 'Benedikt Groß (HfG Schwäbisch Gmünd)',
 		description: `Prompting is a powerful method for generating images using AI image generators. By providing a textual description of an image, a prompt can guide the generator to create a visual representation of that description. However, crafting an effective prompt requires understanding the capabilities and limitations of these generators and even more important, the nuances of language that can impact how the generator interprets the prompt. <br/><br/>In this course, we will explore how to create prompts for AI image generators, and how to use them to generate imaginative and compelling visuals. To get started, we will be working on a short project called "The Illustrated Thing from the Future", where you will create a prompt that describes an imaginary object or concept from the future, and use an AI image generator to bring it to life.`
 	}
 ];

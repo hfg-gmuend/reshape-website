@@ -7,7 +7,7 @@
 
 <div class="grid grid-cols-3 gap-3 md:h-16 md:flex md:justify-evenly">
 	<img src={logoAiD} alt="AI+D Lab" class="logo" />
-	<img src={logoHfG} alt="HfG Schwäbisch-Gmünd" class="logo" />
+	<img src={logoHfG} alt="HfG Schwäbisch Gmünd" class="logo" />
 	<img src={logoBw} alt="Baden-Württemberg" class="logo" />
 	<img src={logoBmbf} alt="BMBF" class="logo" />
 </div>
