@@ -7,7 +7,7 @@ export default [
 	},
 	{
 		name: 'Bjørn Karmann',
-		subtitle: 'oio',
+		subtitle: 'oio studio',
 		description: `Designing interactions for future products and experience. Living in Amsterdam and currently working as senior designer at oio studio.`,
 		image: 'bjorn-karmann'
 	},
@@ -20,7 +20,7 @@ export default [
 	{
 		name: 'Ploipailin Flynn',
 		subtitle: 'antiracistby.design',
-		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI ( antiracistby.design ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `,
+		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI (<a href="http://antiracistby.design" target="_blank" rel="noopener noreferrer" class="underline">antiracistby.design</a> ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `,
 		image: 'ploipailin-flynn'
 	},
 	{

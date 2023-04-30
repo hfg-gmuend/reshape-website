@@ -14,7 +14,7 @@ export default [
 	{
 		timeslot: '12:00-13:00',
 		title: 'Ploipailin Flynn',
-		subtitle: 'Talk (tbd)',
+		subtitle: 'Mirror mirror: Reflections on “accidentally” discriminatory AI outcomes',
 		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI ( antiracistby.design ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `
 	},
 	{
