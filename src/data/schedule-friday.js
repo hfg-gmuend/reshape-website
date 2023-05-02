@@ -2,8 +2,8 @@ export default [
 	{
 		timeslot: '09:30-10:30',
 		title: 'Simon Maris',
-		subtitle: 'Talk (tbd)',
-		description: `Simon Maris is currently Professor (by proxy ~ in Vertretung) of AI - Design and Sustainability at the Department of Art and Design at the University of Applied Sciences Trier. He explores, questions, makes. Trained as an architect, he has long been fascinated by technology and it's intersection with society and art, with a particular focus on computational design, digital fabrication, robotics and more recently AI systems. He co-hosts the towards co-creation podcast.`
+		subtitle: 'A priori: Automated Pattern Recognition Inspiring Overdue Renewable Inventions',
+		description: `The intersection of automated pattern recognition (aka artificial intelligence), renewable systems (aka sustainability) and invention (aka design) is complex, interdependent and urgent. Diving deep and flying high, we will explore it from different perspectives and try to create a map that can guide us for our upcoming explorations and (com)missions.`
 	},
 	{
 		timeslot: '10:30-11:30',
