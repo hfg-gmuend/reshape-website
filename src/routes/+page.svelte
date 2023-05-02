@@ -195,7 +195,7 @@
 				slot="heading"
 				class="reshape-subsection-header text-reshape-lila basis-1/2 mb-[55px] md:mb-0"
 			>
-				Wednesday<br />10.&nbsp;Mai
+				Wednesday<br />May 10
 			</h3>
 		</Schedule>
 		<div class="inset-negative"><div class="seperator" /></div>
@@ -204,7 +204,7 @@
 				slot="heading"
 				class="reshape-subsection-header text-reshape-blau basis-1/2 mb-[55px] md:mb-0"
 			>
-				Donnerstag<br />11.&nbsp;Mai
+				Thursday<br />May 11
 			</h3></Schedule
 		>
 		<div class="inset-negative"><div class="seperator" /></div>
@@ -213,7 +213,7 @@
 				slot="heading"
 				class="reshape-subsection-header text-reshape-gruen basis-1/2 mb-[55px] md:mb-0"
 			>
-				Freitag<br />12.&nbsp;Mai
+				Friday<br />May 12
 			</h3>
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
