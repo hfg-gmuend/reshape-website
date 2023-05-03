@@ -70,8 +70,8 @@
 		background-image: url($lib/assets/speaker-portraits/ploipailin-flynn.jpg);
 	}
 
-	.speaker-bjorn-karmann {
-		background-image: url($lib/assets/speaker-portraits/bjorn-karmann.jpg);
+	.speaker-o-io {
+		background-image: url($lib/assets/speaker-portraits/o-io.jpg);
 	}
 
 	.speaker-tom-white {

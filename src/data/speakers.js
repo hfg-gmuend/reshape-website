@@ -6,10 +6,10 @@ export default [
 		image: 'nadia-piet'
 	},
 	{
-		name: 'Bjørn Karmann',
-		subtitle: 'oio studio',
-		description: `Designing interactions for future products and experience. Living in Amsterdam and currently working as senior designer at oio studio.`,
-		image: 'bjorn-karmann'
+		name: 'Matteo Loglio & Simone Rebaudengo',
+		subtitle: 'oio',
+		description: `oio is a creative company on a quest to turn emerging technologies into an approachable, everyday and sustainable reality. It’s a small team of humans and machines pushing for an impact that outweighs their footprint, shaping future products and narratives for what could be our future. They just launched their first product, designed in collaboration with an AI in a new process they coined as “Artisanal Intelligence”. Constantly pushing the boundaries of post-human collaborations, oio works with big companies, small startups and cultural institutions to shape products and tools for a less-boring future. Some of their collaborations include IKEA, Google, SPACE10, FABRICA, the Museum of the Future, Arduino and Samsung among others. `,
+		image: 'o-io'
 	},
 	{
 		name: 'Prof. Dr. Wolfgang Ertel',
