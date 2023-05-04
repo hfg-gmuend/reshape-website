@@ -24,6 +24,12 @@ export default [
 		image: 'ploipailin-flynn'
 	},
 	{
+		name: 'Roman Stefan Grasy',
+		subtitle: 'Intuity Media Lab, Stuttgart',
+		description: ``,
+		image: 'roman-grasy'
+	},
+	{
 		name: 'Catherine Breslin',
 		subtitle: 'Conversational AI',
 		description: `Dr Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She's excited by the application of research to real-world problems involving speech and language at scale.`,
