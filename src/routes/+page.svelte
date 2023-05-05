@@ -240,6 +240,12 @@
 				<p class="reshape-copy md:reshape-lead-light">
 					Mai 8-10, 2023 <br />(Monday - Wednesday)
 				</p>
+				<p class="reshape-copy mt-[25px] inset-left">
+					Please note that these workshops are intended for students of HfG and KITeGG partner
+					universities as part of the "Internationale Seminarwoche" at HfG. If you're interested in
+					the workshop results, join us on Friday 13:00 at the AI+D Lab at HfG for a presentation of
+					the workshop results!
+				</p>
 			</div>
 			<p class="reshape-copy inset-left mt-[25px] mb-[55px] md:mt-0 md:mb-0">
 				Educators from KITeGG partner universities will offer a series of workshops in the days
@@ -252,7 +258,7 @@
 
 		<Schedule scheduleItems={WORKSHOPS}>
 			<h3 slot="heading" class="reshape-subsection-header basis-1/2 mb-[55px] md:mb-0">
-				Workshops
+				Workshops (internal)
 			</h3>
 		</Schedule>
 	</section>
