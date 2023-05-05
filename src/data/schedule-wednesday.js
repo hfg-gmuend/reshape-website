@@ -17,7 +17,7 @@ export default [
 	},
 	{
 		timeslot: '19:00-21:00',
-		title: 'Barbecue',
-		subtitle: ''
+		title: 'Maultaschenfest ',
+		subtitle: '(Feast of the Swabian ravioli)'
 	}
 ];
