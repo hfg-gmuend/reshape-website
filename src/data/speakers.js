@@ -26,7 +26,7 @@ export default [
 	{
 		name: 'Roman Stefan Grasy',
 		subtitle: 'Intuity Media Lab, Stuttgart',
-		description: ``,
+		description: `Roman Stefan Grasy is unit lead for industrial applications @ Intuity Media Lab. He has been developing digital products and services at Intuity since 2012. As expert for digital manufacturing solutions and medical technologies he coordinates multi-disciplinary teams consisting of designers, data science experts and developers.`,
 		image: 'roman-grasy'
 	},
 	{

@@ -87,6 +87,10 @@
 		background-image: url($lib/assets/speaker-portraits/prompt-battle.jpg);
 	}
 
+	.speaker-roman-grasy {
+		background-image: url($lib/assets/speaker-portraits/roman-grasy.jpg);
+	}
+
 	.speaker-image:hover {
 		background-blend-mode: normal;
 		border-color: inherit;
