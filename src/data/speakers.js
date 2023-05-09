@@ -63,6 +63,14 @@ export default [
 		image: 'andreas-refsgaard'
 	},
 	{
+		name: 'Norbert Riedelsheimer',
+		subtitle: 'IBM Client Engineering',
+		description: `Norbert Riedelsheimer is working as global Design Program Director at IBM Client Engineering, a business unit that leverages cutting edge AI and Cloud Technologies in interdisciplinary squad teams to innovative with IBMs most important clients.
+		As regulations like the EU AI-Act are on the horizon, clients from industries like banking, insurance, industrial, distribution and the public sector are interested in AI-solutions that are trustworthy, explainable and fair.
+		Norbert thinks that we as designers need to even push beyond that and have the power to maximize the positive impact of AI Technologies by applying them in context of the worlds bigger challenges.`,
+		image: 'norbert-riedelsheimer'
+	},
+	{
 		name: 'Team Prompt Battle',
 		subtitle: 'HTW Dresden',
 		description: `Prompt Battle Delegation: Bernadette Geiger & Ella Zickerick <br/><br/> Prompt Battle is a live event where people compete against each other using text-to-image software. Show off your prompt skills and maybe the audience will choose you as the winner who elicited the most surprising, disturbing or beautiful images from the latent spaces of DALL·E 2, Stable Diffusion, Midjourney, Craiyon, etc. <br/><br/>The Prompt Battle format was developed by Florian A. Schmidt & Sebastian Schmieg with the design students at HTW Dresden: Bernadette Geiger, Ella Zickerick, Emily Krause, Levi Stein, Lina Schwarzenberg, Robert Hellwig`,

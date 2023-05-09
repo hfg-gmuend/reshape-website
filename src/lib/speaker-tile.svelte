@@ -91,6 +91,10 @@
 		background-image: url($lib/assets/speaker-portraits/roman-grasy.jpg);
 	}
 
+	.speaker-norbert-riedelsheimer {
+		background-image: url($lib/assets/speaker-portraits/norbert-riedelsheimer.jpg);
+	}
+
 	.speaker-image:hover {
 		background-blend-mode: normal;
 		border-color: inherit;
