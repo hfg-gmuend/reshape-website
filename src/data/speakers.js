@@ -13,7 +13,7 @@ export default [
 	},
 	{
 		name: 'Prof. Dr. Wolfgang Ertel',
-		subtitle: 'Ravensburg-Weingarten University',
+		subtitle: 'RWU Ravensburg-Weingarten',
 		description: `Prof. Dr. Wolfgang Ertel established the Institute for Artificial Intelligence at the Ravensburg-Weingarten University of Applied Sciences. He studied physics and mathematics in Konstanz and has been a researcher in artificial intelligence since 1987. His areas of expertise are machine learning and adaptive robots. After many research projects about service robots, adaptive machines and diagnostic systems he now works on AI and the future of humanity. He teaches artificial intelligence, machine learning, mathematics and sustainability. He wrote a textbook on artificial intelligence with translations into English, Chinese, Russian, Greek and Turkish. At Scientists for Future he is committed to climate and environmental protection.`,
 		image: 'wolfgang-ertel'
 	},

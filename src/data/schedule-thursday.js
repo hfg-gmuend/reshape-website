@@ -33,7 +33,7 @@ export default [
 		title: 'Panel',
 		subtitle: 'AI Industry - professional requirements and fields of activity for designers',
 		description: `What will "working with AI" actually look like after graduation? What are concrete job descriptions for designers? What do they need to know about AI to be able to responsibly co-design AI-based products and services? What emergent fields of activity exist beyond product development, e.g. research, consulting etc.? 
-		<br/> <br/> Panelists:<br/><br/> - Nadia Piet (AIxDesign)<br/>- Norbert Riedelsheimer (IBM Client Engineering, Munich) <br/>- Roman Stefan Grasy (Intuity Media Lab, Stuttgart) <br/> - Prof. Dr. rer. nat. Wolfgang Ertel (University of applied science Ravensburg-Weingarten)`
+		<br/> <br/>Moderator: Benedikt Groß<br/><br/> Panelists:<br/><br/> - Nadia Piet (AIxDesign)<br/>- Norbert Riedelsheimer (IBM Client Engineering, Munich) <br/>- Roman Stefan Grasy (Intuity Media Lab, Stuttgart) <br/> - Prof. Dr. rer. nat. Wolfgang Ertel (RWU Ravensburg-Weingarten)`
 	},
 	{
 		timeslot: '17:00-18:00',
