@@ -83,13 +83,19 @@
 			</video> -->
 		</div>
 		<div class=" absolute top-0 right-0 left-0 bottom-0">
-			<div class="absolute left-0 bottom-0 right-0">
+			<div class="absolute left-0 bottom-0 right-0 z-10">
 				<div class="inset pb-[24px] flex items-end justify-between">
 					<div>
 						<span class="block md:text-[64px] md:leading-[4rem]"
 							>10.-<br />
 							12.5.23</span
 						>
+						<a
+							href="https://hfg-gmuend.zoom.us/j/63049794626?pwd=MTE3N3hETVJ4cUtWNXhrUjFycFZEZz09"
+							target="_blank"
+							rel="noopener noreferrer"><span class="block text-[30px]">Join via Zoom</span></a
+						>
+
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
 					</div>
 					<LabLogo />
@@ -221,12 +227,10 @@
 			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[900px]"
 		>
 			<a
-				href="https://www.eventbrite.com/e/reshape-forum-for-artificial-intelligence-in-art-and-design-tickets-616705341277"
+				href="https://hfg-gmuend.zoom.us/j/63049794626?pwd=MTE3N3hETVJ4cUtWNXhrUjFycFZEZz09"
 				target="_blank"
 				rel="noopener noreferrer"
-				>The public program is open to all and free of charge. Please <span class="text-[#6262FF]"
-					>register here</span
-				>
+				>Join the conference remotely via <span class="text-[#6262FF]">Zoom</span>
 				<span class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span>
 			</a>
 		</p>
