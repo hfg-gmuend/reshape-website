@@ -90,12 +90,6 @@
 							>10.-<br />
 							12.5.23</span
 						>
-						<a
-							href="https://hfg-gmuend.zoom.us/j/63049794626?pwd=MTE3N3hETVJ4cUtWNXhrUjFycFZEZz09"
-							target="_blank"
-							rel="noopener noreferrer"><span class="block text-[30px]">Join via Zoom</span></a
-						>
-
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
 					</div>
 					<LabLogo />
@@ -223,19 +217,19 @@
 			</h3>
 		</Schedule>
 		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
-		<p
+		<!--<p
 			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[900px]"
 		>
 			<a
-				href="https://hfg-gmuend.zoom.us/j/63049794626?pwd=MTE3N3hETVJ4cUtWNXhrUjFycFZEZz09"
+				href="#"
 				target="_blank"
 				rel="noopener noreferrer"
 				>Join the conference remotely via <span class="text-[#6262FF]">Zoom</span>
 				<span class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span>
 			</a>
-		</p>
+		</p> -->
 	</section>
-	<section class="mt-[165px] md:mt-[300px]">
+	<section class="mt-[80px] md:mt-[134px]">
 		<div class="md:grid md:grid-cols-3 gap-10 md:mb-[55px]">
 			<div class="col-span-2">
 				<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[25px] md:mb-[25px]">
