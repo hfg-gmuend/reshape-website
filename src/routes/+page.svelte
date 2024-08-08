@@ -71,7 +71,7 @@
 	>
 </header>
 
-<main class=" inset reshape-gradient-bg">
+<main class="inset">
 	<div class="pt-11 inset-negative w-screen h-screen border-b-2 border-black">
 		<!-- Desktop Animation -->
 		<div class="absolute top-0 right-0 left-0 bottom-0 max-md:hidden"><Animation /></div>

@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import chroma from 'chroma-js';
 	import Grid from './Grid.svelte';
+	import { COLOR_INNER, COLOR_BACKGROUND, COLORS } from './colors.js';
 
 	// Number of squares
 	let squareCount = 14;
@@ -16,25 +17,9 @@
 	let blur = 1.5;
 
 	let colorOuter = '#B468FF';
-	let colorInner = '#fff';
-	let colorBackground = '#fff0';
 
-	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
-	let colors = [
-		'#B468FF',
-		'#B468FF',
-		'#3636FF',
-		'#3636FF',
-		'#548ABA',
-		'#8CCE00',
-		'#8CCE00',
-		'#548ABA',
-		'#3636FF',
-		'#3636FF',
-		'#B468FF'
-	];
 	let colorScale = chroma
-		.scale(colors)
+		.scale(COLORS)
 		.domain([0, 0.24, 0.3, 0.44, 0.47, 0.5, 0.74, 0.77, 0.8, 0.94, 1])
 		.mode('lch');
 
@@ -134,9 +119,9 @@
 </script>
 
 <!-- <div class="flex toolbar">
-  <ColorPicker bind:hex={colorBackground} label="Background color" />
+  <ColorPicker bind:hex={COLOR_BACKGROUND} label="Background color" />
   <ColorPicker bind:hex={colorOuter} label="Shape outer color" />
-  <ColorPicker bind:hex={colorInner} label="Shape inner color" />
+  <ColorPicker bind:hex={COLOR_INNER} label="Shape inner color" />
 </div> -->
 
 <svg
@@ -172,9 +157,9 @@
 		</g>
 	</mask>
 
-	<rect id="gridBackground" {width} {height} fill={colorBackground} />
+	<rect id="gridBackground" {width} {height} fill={COLOR_BACKGROUND} />
 
-	<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
+	<g id="grid" fill={COLOR_INNER} filter="url(#blurMe)" mask="url(#gridMask)">
 		<rect id="gridColor" {width} {height} fill={colorOuter} />
 		<g>
 			<use href="#gridSymbol" />
